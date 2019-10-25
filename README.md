@@ -1,7 +1,3 @@
-<!--
-# GoktugOcal.github.io
--->
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -60,12 +56,12 @@
 
 
 <!-- <a href="mysite.html">Click for something interesting.</a> -->
-
+<!--
 <br><br/>
 <div class="embed-responsive embed-responsive-16by9">
 <center><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BermIHe03zU?rel=0&autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></center>
 </div>
-
+-->
 <!--
 <div class="container-fluid bg-3 text-center">    
   <div class="row">
