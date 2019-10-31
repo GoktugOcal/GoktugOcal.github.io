@@ -14,7 +14,7 @@ hr.star-light {
 .rounded-circle {
   height: auto;
   border-radius: 50%;
-  width: 256px;
+  /*width: 256px;*/
 }
 
 .img-pp {
