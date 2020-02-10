@@ -205,14 +205,14 @@ a1 {
   max-width: 300px;
   height: 300px;
   object-fit: contain;
-  margin: 5%;
+  /* margin: 5%; */
 }
 
 .img-pp {
   max-width: 150px;
   height: 150px;
-  object-fit: cover;
-  margin-right: 3rem;
+  /* object-fit: cover; */
+  /* margin-right: 3rem; */
 }
 
 .container-fluid {

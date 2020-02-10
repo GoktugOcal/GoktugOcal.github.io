@@ -33,7 +33,11 @@
             color: #333;
             text-align: center;
             position: relative;
+            background-color: rgb(194, 194, 194);
         }
+        #section1 {background-color:#d1d1d1;}
+        #section2 {background-color:rgb(255, 255, 255);}
+        #section3 {background-color:#d1d1d1;}
 
         .subheading {
         text-transform: uppercase;
@@ -82,73 +86,73 @@
         .social-icons a:hover {
         background-color: #495057;
         }
+        .button {
+            background-color:#495057;
+            border-radius:10px;
+            border:0px solid #ffffff;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:19px;
+            padding:16px 31px;
+            text-decoration:none;
+        }
+        .button:hover {
+            background-color:#2b2b2b;
+        }
+        .button:active {
+            position:relative;
+            top:1px;
+        }
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            }
     </style>
 </head>
  
 <body>
     <div id="fullpage">
-        <div id="section1" class="section">
-            <div class="container">
-                
-                    <div style="display: table-row;">
-                        <div style="display: table-cell;"><img class="img-pp rounded-circle" src="assets/img/profile.jpg" alt=""></div>
-                        <div style="display: table-cell;">
-                            <h1 class="mb-10">Göktuğ
-                               <span class="text-primary">Öcal</span>
-                            </h1>
-                            <div class="subheading mb-1">Istanbul, TURKEY</div>
-                            <div class="mb-5">
-                                <a class="subheading1" href="mailto:goktugocal41@gmail.com">goktugocal41@gmail.com</a>
-                            </div>
-                            
-                            <p class="lead mb-5">ITU Control and Automation Engineering Student</p>
-                            <div class="social-icons">
-                                <a href="https://tr.linkedin.com/in/göktuğ-öcal-690067115" target="_blank">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="https://github.com/GoktugOcal" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.instagram.com/goktug.ocal" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://open.spotify.com/user/mr41showtime" target="_blank">
-                                    <i class="fab fa-spotify"></i>
-                                </a>
-                            </div>
+        <div id="section1" class="section" data-anchor="About">
+            <div class="center">
+                <div>                
+                    <img class="img-pp rounded-circle center" src="assets/img/profile.jpg">
+                </div>
+                <div>
+                    <h1 class="mb-10">Göktuğ
+                        <span class="text-primary">Öcal</span>
+                    </h1>
+                    <div class="subheading mb-1">Istanbul, TURKEY</div>
+                    <div class="mb-5">
+                        <a class="subheading1" href="mailto:goktugocal41@gmail.com">goktugocal41@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">ITU Control and Automation Engineering Student</p>
+                    <a href="#Contact" class="button" style="text-decoration: none;">Contact with me</a>
+                </div>
+               
 
-
-                        </div>
-                     <!--       <div class="w-100">
-                                <!-- <h1 class="mb-4">Göktuğ
-                                    <span class="text-primary">Öcal</span>
-                                </h1> -->
-                <!--                <div class="subheading mb-1">Istanbul, TURKEY</div>
-                                <div class="mb-5">
-                                    <a class="subheading1" href="mailto:goktugocal41@gmail.com">goktugocal41@gmail.com</a>
-                                </div>
-                                <p class="lead mb-5">ITU Control and Automation Engineering Student</p>
-                                <div class="social-icons">
-                                    <a href="https://tr.linkedin.com/in/göktuğ-öcal-690067115" target="_blank">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="https://github.com/GoktugOcal" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/goktug.ocal" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                        </a>
-                                        <a href="https://open.spotify.com/user/mr41showtime" target="_blank">
-                                            <i class="fab fa-spotify"></i>
-                                        </a>
-                            
-                                </div><!--Social Icons-->
-                 <!--       </div><!--table cell-->
-                    </div><!--table row-->
-            </div><!--Container-->
+            </div>
+            <!--Container-->
         </div><!-- Section 1 -->
-        <div id="section2" class="section">Section 2</div>
-        <div id="section3" class="section">Section 3</div>
+        <div id="section2" class="section" data-anchor="idk">Section 2</div>
+        <div id="section3" class="section" data-anchor="Contact">
+            <div class="social-icons">
+                <a href="https://tr.linkedin.com/in/göktuğ-öcal-690067115" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/GoktugOcal" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/goktug.ocal" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://open.spotify.com/user/mr41showtime" target="_blank">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+        </div>
     </div> <!--Full Page-->
 </body>
 </html>
