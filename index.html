@@ -21,12 +21,11 @@
                 // afterRender: function() {
                 //     setInterval(function() {
                 //         $.fn.fullpage.moveSectionDown();
-                //     }, 1500);
+                //     }, 10000);
                 // }
             });    
         });
     </script>
-
     <style>
         .section {
             font-size: 3em;
@@ -35,64 +34,121 @@
             text-align: center;
             position: relative;
         }
+
+        .subheading {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+        }
+
+        .subheading1 {
+        text-transform: lowercase;
+        font-weight: 500;
+        font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        font-size: 1.5rem;
+        color: #0b0b0b;
+        }
+
+        .img-pp {
+        max-width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-right: 3rem;
+        }
+
+        p.lead {
+        font-size: 1.15rem;
+        font-weight: 400;
+        }
+
+        .social-icons a {
+        display: inline-block;
+        height: 3.5rem;
+        width: 3.5rem;
+        background-color: #495057;
+        /*color: #fff!important;*/
+        border-radius: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+        margin-right: 1rem;
+        }
+
+        .social-icons a:last-child {
+        margin-right: 0;
+        }
+
+        .social-icons a:hover {
+        background-color: #495057;
+        }
     </style>
 </head>
  
 <body>
     <div id="fullpage">
-        <div class="section">
-            <div class="container-fluid p-0">
-                <!--<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="">-->
-                <section class="resume-section p-3 d-flex align-items-center" id="about">
+        <div id="section1" class="section">
+            <div class="container">
+                
                     <div style="display: table-row;">
                         <div style="display: table-cell;"><img class="img-pp rounded-circle" src="assets/img/profile.jpg" alt=""></div>
                         <div style="display: table-cell;">
-                            <div class="w-100">
-                        <h1 class="mb-4">Göktuğ
-                            <span class="text-primary">Öcal</span>
-                        </h1>
-                        <div class="subheading mb-1">Istanbul, TURKEY</div>
-                        <div class="mb-5">
-                            <a class="subheading1" href="mailto:goktugocal41@gmail.com">goktugocal41@gmail.com</a>
-                        </div>
-                        <p class="lead mb-5">ITU Control and Automation Engineering Student</p>
-                        <div class="social-icons">
-                            <a href="https://tr.linkedin.com/in/göktuğ-öcal-690067115" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://github.com/GoktugOcal" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.instagram.com/goktug.ocal" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                                </a><a href="https://open.spotify.com/user/mr41showtime" target="_blank">
+                            <h1 class="mb-10">Göktuğ
+                               <span class="text-primary">Öcal</span>
+                            </h1>
+                            <div class="subheading mb-1">Istanbul, TURKEY</div>
+                            <div class="mb-5">
+                                <a class="subheading1" href="mailto:goktugocal41@gmail.com">goktugocal41@gmail.com</a>
+                            </div>
+                            
+                            <p class="lead mb-5">ITU Control and Automation Engineering Student</p>
+                            <div class="social-icons">
+                                <a href="https://tr.linkedin.com/in/göktuğ-öcal-690067115" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/GoktugOcal" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/goktug.ocal" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://open.spotify.com/user/mr41showtime" target="_blank">
                                     <i class="fab fa-spotify"></i>
                                 </a>
+                            </div>
+
+
+                        </div>
+                     <!--       <div class="w-100">
+                                <!-- <h1 class="mb-4">Göktuğ
+                                    <span class="text-primary">Öcal</span>
+                                </h1> -->
+                <!--                <div class="subheading mb-1">Istanbul, TURKEY</div>
+                                <div class="mb-5">
+                                    <a class="subheading1" href="mailto:goktugocal41@gmail.com">goktugocal41@gmail.com</a>
+                                </div>
+                                <p class="lead mb-5">ITU Control and Automation Engineering Student</p>
+                                <div class="social-icons">
+                                    <a href="https://tr.linkedin.com/in/göktuğ-öcal-690067115" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://github.com/GoktugOcal" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/goktug.ocal" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="https://open.spotify.com/user/mr41showtime" target="_blank">
+                                            <i class="fab fa-spotify"></i>
+                                        </a>
                             
-                        </div>
-                    </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Bootstrap core JavaScript -->
-                <script src="vendor/jquery/jquery.min.js"></script>
-                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-                <!-- Plugin JavaScript -->
-                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-                <!-- Custom scripts for this template -->
-                <script src="js/resume.min.js"></script>
-                <script src="assets/js/jquery.min.js"></script>
-                <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-                <script src="assets/js/resume.js"></script>
-                <script src="assets/js/resume.min.js"></script>
-        </div>
-
-        </div>
-
-        <div class="section">Section 2</div>
-        <div class="section">Section 3</div>
-    </div>            
+                                </div><!--Social Icons-->
+                 <!--       </div><!--table cell-->
+                    </div><!--table row-->
+            </div><!--Container-->
+        </div><!-- Section 1 -->
+        <div id="section2" class="section">Section 2</div>
+        <div id="section3" class="section">Section 3</div>
+    </div> <!--Full Page-->
 </body>
 </html>
