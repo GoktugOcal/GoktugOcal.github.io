@@ -1,146 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="jquery.fullPage.js"></script> -->
     <title>GoktugOcal</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/resume.css">
-    <link rel="stylesheet" href="assets/css/resume.min.css">
-    <link href="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.css" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/resume.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/resume.min.css"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.css" rel="stylesheet">
+    <link rel="stylesheet" href="my.css">
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
     <script src="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
     <script>
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 sectionsColors: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
                 navigation: true,
+                navigationTooltips: ['About', 'idk', 'Contact'],
+                showActiveTooltip: false,
+                paddingTop: '10px',
+                fixedElements: '.navbar-fixed-top',
+                menu: '#menu',
+                // loopBottom: true,
+                // responsiveWidth: 950,
+                scrollBar: false,
                 // afterRender: function() {
                 //     setInterval(function() {
                 //         $.fn.fullpage.moveSectionDown();
                 //     }, 10000);
                 // }
-            });    
+            });
+            $(window).scroll(function() {
+                // checks if window is scrolled more than 500px, adds/removes solid class
+                if ($(this).scrollTop() > 1) {
+                    $('.navbar').addClass('solid1');
+                } else {
+                    $('.navbar').removeClass('solid1');
+                }
+            });
         });
     </script>
     <style>
-        .section {
-            font-size: 3em;
-            font-family: helvetica, arial;
-            color: #333;
-            text-align: center;
-            position: relative;
-            background-color: rgb(194, 194, 194);
-        }
-        #section1 {background-color:#d1d1d1;}
-        #section2 {background-color:rgb(255, 255, 255);}
-        #section3 {background-color:#d1d1d1;}
 
-        .subheading {
-        text-transform: uppercase;
-        font-weight: 500;
-        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-        font-size: 1.5rem;
-        }
-
-        .subheading1 {
-        text-transform: lowercase;
-        font-weight: 500;
-        font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-        font-size: 1.5rem;
-        color: #0b0b0b;
-        }
-
-        .img-pp {
-        max-width: 150px;
-        height: 150px;
-        object-fit: cover;
-        margin-right: 3rem;
-        }
-
-        p.lead {
-        font-size: 1.15rem;
-        font-weight: 400;
-        }
-
-        .social-icons a {
-        display: inline-block;
-        height: 3.5rem;
-        width: 3.5rem;
-        background-color: #495057;
-        /*color: #fff!important;*/
-        border-radius: 100%;
-        text-align: center;
-        font-size: 1.5rem;
-        line-height: 3.5rem;
-        margin-right: 1rem;
-        }
-
-        .social-icons a:last-child {
-        margin-right: 0;
-        }
-
-        .social-icons a:hover {
-        background-color: #495057;
-        }
-        .button {
-            background-color:#495057;
-            border-radius:10px;
-            border:0px solid #ffffff;
-            display:inline-block;
-            cursor:pointer;
-            color:#ffffff;
-            font-family:Arial;
-            font-size:19px;
-            padding:16px 31px;
-            text-decoration:none;
-        }
-        .button:hover {
-            background-color:#2b2b2b;
-        }
-        .button:active {
-            position:relative;
-            top:1px;
-        }
-        .center {
-            margin: auto;
-            width: 50%;
-            padding: 10px;
-            }
     </style>
 </head>
- 
+
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#Contact">goktugocal</a>
+        </nav>
+        <nav class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#idk">Second</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </nav>
+
     <div id="fullpage">
         <div id="section1" class="section" data-anchor="About">
             <div class="center">
-                <div>                
-                    <img class="img-pp rounded-circle center" src="assets/img/profile.jpg">
+                <div>
+                    <!-- <img class="img-pp rounded-circle center" src="assets/img/profile.jpg"> -->
                 </div>
                 <div>
-                    <h1 class="mb-10">Göktuğ
-                        <span class="text-primary">Öcal</span>
-                    </h1>
+                    <h1 class="mb-4">Göktuğ Öcal </h1>
                     <div class="subheading mb-1">Istanbul, TURKEY</div>
                     <div class="mb-5">
                         <a class="subheading1" href="mailto:goktugocal41@gmail.com">goktugocal41@gmail.com</a>
                     </div>
                     <p class="lead mb-5">ITU Control and Automation Engineering Student</p>
-                    <a href="#Contact" class="button" style="text-decoration: none;">Contact with me</a>
+                    <a href="#Contact" class="btn btn-primary" style="text-decoration: none;">Contact with me</a>
                 </div>
-               
+
 
             </div>
-            <!--Container-->
-        </div><!-- Section 1 -->
+        </div>
+        <!-- Section 1 -->
         <div id="section2" class="section" data-anchor="idk">Section 2</div>
         <div id="section3" class="section" data-anchor="Contact">
             <div class="social-icons">
                 <a href="https://tr.linkedin.com/in/göktuğ-öcal-690067115" target="_blank">
                     <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a>
+                    <div class="vl"></div>
                 </a>
                 <a href="https://github.com/GoktugOcal" target="_blank">
                     <i class="fab fa-github"></i>
@@ -153,6 +109,8 @@
                 </a>
             </div>
         </div>
-    </div> <!--Full Page-->
+    </div>
+    <!--Full Page-->
 </body>
+
 </html>
