@@ -262,9 +262,9 @@ a {
 
 .social-icon-mail {
     display: inline-block;
-    /* text-decoration: none;
+    text-decoration: none;
     height: 10rem;
-    width: 10rem auto; */
+    width: 10rem;
     border: 2px solid #333;
     background: transparent;
     /* background-color: #bbbbbb; */
@@ -273,6 +273,7 @@ a {
     padding: 3rem;
     /* font-size: 3.5rem; */
     margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .social-icon-mail:hover {
