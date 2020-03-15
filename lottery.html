@@ -1,99 +1,96 @@
-<<<<<<< HEAD
-<html>
+<<<<<<< HEAD <html>
 
-<head>
+    <head>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="my.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="my.css">
 
-</head>
+    </head>
 
-<body>
-    <div class="lottery-top">
-        <form id="frm1" style="align-items: center;">
-            <div class="form-group row">
-                <div class="col-sm col-centered">
-                    <label for="max">En Büyük Sayı:</label><br>
-                    <input type="text" id="max" name="max"><br>
+    <body>
+        <div class="lottery-top">
+            <form id="frm1" style="align-items: center;">
+                <div class="form-group row">
+                    <div class="col-sm col-centered">
+                        <label for="max">En Büyük Sayı:</label><br>
+                        <input type="text" id="max" name="max"><br>
+                    </div>
+                    <div class="col-sm">
+                        <label for="numbers">Sayı Adedi:</label><br>
+                        <input type="text" id="numbers" name="numbers"><br>
+                    </div>
+                    <div class="col-sm">
+                        <label for="column">Kolon Sayısı:</label><br>
+                        <input type="text" id="column" name="column" style="align-self: center;">
+                    </div>
                 </div>
-                <div class="col-sm">
-                    <label for="numbers">Sayı Adedi:</label><br>
-                    <input type="text" id="numbers" name="numbers"><br>
-                </div>
-                <div class="col-sm">
-                    <label for="column">Kolon Sayısı:</label><br>
-                    <input type="text" id="column" name="column" style="align-self: center;">
-                </div>
+            </form>
+            <button class="btn btn-primary btn-lg btn-block" style=" padding-left: 0;" ,id="button" onclick="random();"> Bilet Oluştur </button>
+            <div style="text-align: center; padding-top: 5%; font-size: 25pt;">
+                <p id="number"></p>
             </div>
-        </form>
-        <button class="btn btn-primary btn-lg btn-block" style=" padding-left: 0;" ,id="button" onclick="random();"> Bilet Oluştur </button>
-        <div style="text-align: center; padding-top: 5%; font-size: 25pt;">
-            <p id="number"></p>
         </div>
-    </div>
-</body>
+    </body>
 
-<script>
-    function random() {
-        var x = document.getElementById("frm1");
-        var max = x.elements[0].value;
-        var numbers = x.elements[1].value;
-        var column = x.elements[2].value;
-        var text = "<table style='width:100%'>";
+    <script>
+        function random() {
+            var x = document.getElementById("frm1");
+            var max = x.elements[0].value;
+            var numbers = x.elements[1].value;
+            var column = x.elements[2].value;
+            var text = "<table style='width:100%'>";
 
-        var tablo = new Array(column);
+            var tablo = new Array(column);
 
-        var i;
-        var j;
-        var temp;
+            var i;
+            var j;
+            var temp;
 
-        for (i = 0; i < column; i++) {
-            tablo[i] = new Array(numbers)
-            let numbersArr = createArrayOfNumbers(1, max);
-            let myMax = max;
-            console.log(numbersArr)
-            for (j = 0; j < numbers; j++) {
-                let randIndex = Math.floor(Math.random() * (max - 1)) + 1;
-                let randNum = numbersArr[randIndex]
-                max--;
-                numbersArr.splice(randIndex, 1);
+            for (i = 0; i < column; i++) {
+                tablo[i] = new Array(numbers)
+                let numbersArr = createArrayOfNumbers(1, max);
+                let myMax = max;
+                console.log(numbersArr)
+                for (j = 0; j < numbers; j++) {
+                    let randIndex = Math.floor(Math.random() * (max - 1)) + 1;
+                    let randNum = numbersArr[randIndex]
+                    max--;
+                    numbersArr.splice(randIndex, 1);
 
-                // if (j === numbers - 1) {
-                //     text += (randNum)
-                // } else {
-                //     text += (randNum) + " - "
-                // }
-                console.log(randIndex.toString() + " - " + randNum);
-                tablo[i][j] = randNum;
+                    // if (j === numbers - 1) {
+                    //     text += (randNum)
+                    // } else {
+                    //     text += (randNum) + " - "
+                    // }
+                    console.log(randIndex.toString() + " - " + randNum);
+                    tablo[i][j] = randNum;
 
+                }
             }
-        }
 
-        for (i = 0; i < column; i++) {
-            text += "<tr>"
-            text += "<td>" + "KOLON " + (i + 1) + "</td>"
-            for (j = 0; j < numbers; j++) {
-                text += "<td>" + tablo[i][j] + "</td>";
+            for (i = 0; i < column; i++) {
+                text += "<tr>"
+                text += "<td>" + "KOLON " + (i + 1) + "</td>"
+                for (j = 0; j < numbers; j++) {
+                    text += "<td>" + tablo[i][j] + "</td>";
+                }
+                text += "</tr>"
             }
-            text += "</tr>"
-        }
-        text += "</table>"
+            text += "</table>"
 
-        document.getElementById("number").innerHTML = text;
-    }
-
-    function createArrayOfNumbers(start, end) {
-        let myArray = [];
-
-        for (let i = start; i <= end; i++) {
-            myArray.push(i);
+            document.getElementById("number").innerHTML = text;
         }
 
-        return myArray;
-    }
-</script>
+        function createArrayOfNumbers(start, end) {
+            let myArray = [];
 
-</html>
-=======
+            for (let i = start; i <= end; i++) {
+                myArray.push(i);
+            }
 
->>>>>>> 33f71102b125f0f05b8d8868dc0c8874fa89e462
+            return myArray;
+        }
+    </script>
+
+    </html>
+    ======= >>>>>>> 33f71102b125f0f05b8d8868dc0c8874fa89e462
