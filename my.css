@@ -282,6 +282,17 @@ a {
     color: white;
 }
 
+.reengen-text {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.reengen-text:hover {
+    color: greenyellow;
+    font-weight: 900;
+    text-decoration: none;
+}
+
 
 /*
 .button {
