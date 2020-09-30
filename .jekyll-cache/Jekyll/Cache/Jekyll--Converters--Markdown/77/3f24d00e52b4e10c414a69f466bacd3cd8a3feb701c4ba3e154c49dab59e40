@@ -1,0 +1,82 @@
+I"�<div class="main-banner">
+   <!-- <div class="row align-items-center" style="width: 50%;margin: 0 auto;height:100%;"> -->
+   <div class="row col-md-6 col-sm-12 align-items-center" style="margin: 0 auto;height:100%;">
+      <div class="col-xl-8 col-xs-12 order-xl-1 order-2">
+         <p style="font-family: 'Caveat', cursive; font-size: calc(20px + 0.52vw); line-height: 1;">SUP EVERYONE! I'M</p>
+         <p style="font-family: 'Bebas Neue', cursive; font-size: calc(100px + 2.6vw); line-height: 1;">GÖKTUĞ</p>
+         <p style="font-family: 'Open Sans', sans-serif; font-size: calc(20px + 0.52vw); line-height: 1; color: rgb(255,153,0,1);">Istanbul based Data Scientist.</p>
+         <p style="font-family: 'Open Sans', sans-serif; font-size: calc(13px + 0.35vw); line-height: 1.2;">I'm a data scientist from Istanbul, working at REENGEN. I love cinema, every branch of sports, video games and The Office.</p>
+         <p style="font-family: 'Open Sans', sans-serif; font-size: calc(13px + 0.35vw); line-height: 1.2;">Contact with me.</p>
+      </div>
+      <div class="col-xl-4 col-xs-12 order-1">
+         <img class="img-pp rounded-circle" src="assets/img/profile.jpg" alt="" />
+      </div>
+   </div>
+</div>
+
+<div class="row col-12 justify-content-center">
+   <div class="col-md-6 col-sm-12 .ml-auto" style="width:100%">
+      <h1 class="section-title">Latest Posts</h1>
+      <div class="col-12 postcards">
+         
+         <div class="col-12 postcard-container">
+            <div class="row col-12">
+               <a href="/2020/09/22/kaggle.html">
+                  <div class="row postcard-image">
+                     <div class="col-md-4 col-sm-12 .ml-auto">
+                        <img class="postcard-image-img" src="https://www.datasciencearth.com/wp-content/uploads/2020/05/kaggle.png" alt="There will be blood" width="100%" />
+                     </div>
+                  </div>
+                  <div class="row col-12">
+                     <div class="col-md-4 gradient-overlay"></div>
+                     <div class="col-md-8">
+                        <h1 class="postcard-text-title">How to Win Kaggle Competitions</h1>
+                        <p class="postcard-text-summary">Kaggle is the perfect platform for a data scientist to hone their skills, build a great reputation and potentially get some quick cash. </p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         
+         <div class="col-12 postcard-container">
+            <div class="row col-12">
+               <a href="/2020/09/17/pandas-indexing.html">
+                  <div class="row postcard-image">
+                     <div class="col-md-4 col-sm-12 .ml-auto">
+                        <img class="postcard-image-img" src="https://iqrablogger.com/wp-content/uploads/2020/03/574-5747046_python-pandas-logo-transparent-hd-png-download.png" alt="There will be blood" width="100%" />
+                     </div>
+                  </div>
+                  <div class="row col-12">
+                     <div class="col-md-4 gradient-overlay"></div>
+                     <div class="col-md-8">
+                        <h1 class="postcard-text-title">Pandas Indexing Explained</h1>
+                        <p class="postcard-text-summary">Pandas is a best friend to a Data Scientist, and index is the invisible soul behind pandas</p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         
+         <div class="col-12 postcard-container">
+            <div class="row col-12">
+               <a href="/2020/09/16/title-trial.html">
+                  <div class="row postcard-image">
+                     <div class="col-md-4 col-sm-12 .ml-auto">
+                        <img class="postcard-image-img" src="https://www.filmhafizasi.com/wp-content/uploads/eski-yazilar/604567-twbb_fire.jpg" alt="There will be blood" width="100%" />
+                     </div>
+                  </div>
+                  <div class="row col-12">
+                     <div class="col-md-4 gradient-overlay"></div>
+                     <div class="col-md-8">
+                        <h1 class="postcard-text-title">There Will Be Blood - Review</h1>
+                        <p class="postcard-text-summary">Paul Thomas Anderson’s strange and potent epic about oil and greed pushes at the boundaries of cinema</p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         
+      </div>
+   </div>
+</div>
+:ET

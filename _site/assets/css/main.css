@@ -1,0 +1,39 @@
+body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+@font-face { font-family: "BebasNeue"; src: url("assets/fonts/BebasNeue.ttf") format("truetype"); }
+
+li { display: inline; }
+
+a * { text-decoration: none; display: inline-block; color: black; }
+
+a:hover * { color: gray; }
+
+.postcards { width: 100%; }
+
+.postcard-container { width: 100%; min-height: 160px; margin-top: 10px; margin-bottom: 10px; transition: transform .1s; }
+
+.postcard-container:hover { transform: scale(1.1); }
+
+.postcard-text { text-decoration: none; }
+
+.postcard-image { width: 100%; height: 100%; overflow: hidden; position: absolute; z-index: -1; display: block; }
+
+.postcard-image-img { margin: -5% 0; object-fit: cover; }
+
+.postcard-text-title { font-size: calc(20px + 0.52vw); font-family: 'Open Sans', sans-serif; font-weight: bold; }
+
+.postcard-text-summary { font-size: calc(13px + 0.35vw); font-family: 'Open Sans', sans-serif; font-weight: 300; }
+
+.gradient-overlay { height: inherit; background: linear-gradient(90deg, rgba(255, 255, 255, 0) 25%, white 100%); background-size: cover; }
+
+.main-banner { color: white; max-width: 100%; height: 500px; background-image: url("/assets/img/main-banner-background.jpg"); background-size: auto; background-repeat: no-repeat; background-position: 0 50%; object-fit: cover; }
+
+.post-banner { max-width: 100%; height: 500px; background-size: 100% auto; background-position: 0 50%; background-repeat: no-repeat; object-fit: cover; }
+
+.section-title { font-family: 'Bebas Neue', cursive; margin-top: 5%; margin-bottom: 5%; }
+
+.img-pp { display: block; margin-left: auto; margin-right: auto; max-width: calc(100px + 7.8vw); height: calc(100px + 7.8vw); object-fit: cover; }
+
+.rounded-circle { border-radius: 50% !important; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,1 +1,0 @@
-GoktugOcal's Website
