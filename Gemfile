@@ -1,8 +1,10 @@
-frozen_string_literal: true
+# frozen_string_literal: true
 
 source "https://rubygems.org"
 
 gem 'jekyll'
+
+gem 'github-pages', group: jekyll_plugins
 
 # git_source(:github) {|goktugocal| "https://github.com/#{goktugocal}" }
 
