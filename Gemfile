@@ -1,13 +1,15 @@
-# frozen_string_literal: true
-
-# source "https://rubygems.org"
-
-# git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+frozen_string_literal: true
 
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+gem 'jekyll'
 
-# gem "rails"
-gem "jekyll"
+# git_source(:github) {|goktugocal| "https://github.com/#{goktugocal}" }
+
+# source "https://rubygems.org"
+
+# gem "github-pages", group: :jekyll_plugins
+
+# # gem "rails"
+# gem "jekyll"
 
