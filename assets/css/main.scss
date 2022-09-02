@@ -6,6 +6,61 @@
     font-family: "BebasNeue";
     src: url("assets/fonts/BebasNeue.ttf") format("truetype"),
 }
+@font-face {
+    font-family: 'poppinsblack';
+    src: url('../fonts/poppins-black-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('../fonts/poppins-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.navbar-brand {
+    float: left;
+    padding: 0 20px;
+    font-size: 14px;
+    border-right: 1px #909090 solid;
+}
+
+.bg-custom{
+    background-color:black;
+}
 
 li {
     display: inline;
@@ -75,15 +130,29 @@ a:hover *{
 }
 
 .main-banner{
-    color: white;
-    max-width: 100%;
-    height: 500px;
-    background-image: url("/assets/img/main-banner-background.jpg");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: 0 50%;
-    object-fit: cover;
+    
+    // color: white;
+    // max-width: 100%;
+    // height: 500px;
+    // background-image: url("/assets/img/main-banner-background.jpg");
+    // background-size: auto;
+    // background-repeat: no-repeat;
+    // background-position: 0 50%;
+    // object-fit: cover;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
+
+.center {
+    margin: auto;
+    // top: 50%;
+    // left: 50%;
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+  }
 
 .post-banner{
     max-width: 100%;
