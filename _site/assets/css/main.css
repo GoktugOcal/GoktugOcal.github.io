@@ -12,7 +12,7 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 @font-face { font-family: 'poppinssemibold'; src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../fonts/poppins-semibold-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-.navbar-brand { float: left; padding: 0 20px; font-size: 14px; border-right: 1px #909090 solid; }
+.navbar-brand { padding-right: 20px; border-right: 1px #909090 solid; }
 
 .bg-custom { background-color: black; }
 
@@ -22,21 +22,19 @@ a * { text-decoration: none; display: inline-block; color: black; }
 
 a:hover * { color: gray; }
 
-.postcards { width: 100%; }
-
-.postcard-container { width: 100%; min-height: 160px; margin-top: 10px; margin-bottom: 10px; transition: transform .1s; }
-
-.postcard-container:hover { transform: scale(1.1); }
+.postcard-container { width: 100%; min-height: 160px; margin-top: 10px; margin-bottom: 20px; transition: transform .1s; padding: 0px; padding-bottom: 10px; border-bottom: 2px #4b5162 solid; }
 
 .postcard-text { text-decoration: none; }
 
-.postcard-image { width: 100%; height: 100%; overflow: hidden; position: absolute; z-index: -1; display: block; }
+.postcard-image { width: 100%; height: 100%; overflow: hidden; }
 
-.postcard-image-img { margin: -5% 0; object-fit: cover; }
+.postcard-image-img { border-radius: 10px; object-fit: cover; aspect-ratio: 16/9; padding: 0px; margin-bottom: 10px; }
 
-.postcard-text-title { font-size: calc(20px + 0.52vw); font-family: 'Open Sans', sans-serif; font-weight: bold; }
+.postcard-text-title { line-height: 1; font-size: calc(25px + 0.36vw); font-family: 'poppinsbold', sans-serif; }
 
-.postcard-text-summary { font-size: calc(13px + 0.35vw); font-family: 'Open Sans', sans-serif; font-weight: 300; }
+.postcard-text-summary { margin: 0px; font-size: calc(15px + 0.05vw); font-family: 'poppinsregular', sans-serif; }
+
+.date-info { line-height: 1; font-family: 'poppinslight', sans-serif; font-size: calc(10px + 0.05vw); }
 
 .gradient-overlay { height: inherit; background: linear-gradient(90deg, rgba(255, 255, 255, 0) 25%, white 100%); background-size: cover; }
 
@@ -46,10 +44,14 @@ a:hover * { color: gray; }
 
 .post-banner { max-width: 100%; height: 500px; background-size: 100% auto; background-position: 0 50%; background-repeat: no-repeat; object-fit: cover; }
 
-.section-title { font-family: 'Bebas Neue', cursive; margin-top: 5%; margin-bottom: 5%; }
+.section-title { font-family: 'poppinsblack', sans-serif; margin-top: 5%; margin-bottom: 5%; }
 
 .img-pp { display: block; margin-left: auto; margin-right: auto; max-width: calc(100px + 7.8vw); height: calc(100px + 7.8vw); object-fit: cover; }
 
 .rounded-circle { border-radius: 50% !important; }
+
+.tags { bottom: 0; left: 0; margin-top: 10px; }
+
+.tag { background-color: black; color: white; text-decoration: none; font-family: 'poppinsregular', sans-serif; font-size: calc(10px + 0.05vw); border-radius: 10px; padding-top: 3px; padding-bottom: 3px; padding-left: 10px; padding-right: 10px; }
 
 /*# sourceMappingURL=main.css.map */
