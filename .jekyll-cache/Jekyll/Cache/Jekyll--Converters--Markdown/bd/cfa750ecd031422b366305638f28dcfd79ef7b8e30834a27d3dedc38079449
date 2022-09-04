@@ -1,4 +1,4 @@
-I"?<div class="main-banner">
+I"Á	<div class="main-banner">
    <div class="center" style="width: 100%;margin: 0 auto;height:100%;">
       <div class="row col-md-6 col-sm-12 align-items-center" style="margin: 0 auto;height:100%;">
          <div class="col-xl-12 col-xs-12 order-xl-1 order-2" style="text-align: center;">
@@ -8,6 +8,21 @@
             <!--<p style="font-family: 'Open Sans', sans-serif; font-size: calc(20px + 0.52vw); line-height: 1; color: rgb(255,153,0,1);">Istanbul based Data Scientist.</p>
             <p style="font-family: 'Open Sans', sans-serif; font-size: calc(13px + 0.35vw); line-height: 1.2;">I'm a data scientist from Istanbul, working at REENGEN. I love cinema, every branch of sports, video games and The Office.</p>
             <p style="font-family: 'Open Sans', sans-serif; font-size: calc(13px + 0.35vw); line-height: 1.2;">Contact with me.</p>-->
+            <div class="row col-md-7 center index-contact"> 
+               <div class="col-3">
+                  <img class="img-index-contact rounded-circle" src="assets/img/profile.jpg" alt="" />
+               </div>
+               <div class="col-9" style="text-align: left;">
+                  <div style="position: absolute; top: 25%;">
+                     <a style="font-family:'poppinsbold'; font-size:20px;">goktugocal</a>
+                     <div class="row">
+                        <a class="col-4 index-contact-text" href="www.linkedin.com/in/goktugocal">linkedin</a>
+                        <a class="col-4 index-contact-text" href="https://github.com/GoktugOcal">github</a>
+                        <a class="col-4 index-contact-text" href="www.instagram.com/goktug.ocal/">instagram</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    </div>

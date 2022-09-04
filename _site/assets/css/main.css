@@ -22,6 +22,12 @@ a * { text-decoration: none; display: inline-block; color: black; }
 
 a:hover * { color: gray; }
 
+.index-contact { margin-top: 50px; bottom: 0; padding: 10px; background-color: rgba(246, 110, 72, 0.15); border-radius: 10px; margin-top: 15vh; }
+
+.img-index-contact { display: block; margin-left: auto; margin-right: auto; max-width: calc(60px + 2vw); height: calc(60px + 2vw); object-fit: cover; }
+
+.index-contact-text { text-decoration: none; color: #f66e48; font-family: 'poppinsregular'; font-size: 20px; }
+
 .postcard-container { width: 100%; min-height: 160px; margin-top: 10px; margin-bottom: 20px; transition: transform .1s; padding: 0px; padding-bottom: 10px; border-bottom: 2px #4b5162 solid; }
 
 .postcard-text { text-decoration: none; }
