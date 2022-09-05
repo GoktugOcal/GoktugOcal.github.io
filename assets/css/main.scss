@@ -85,6 +85,11 @@
     text-align: center;
 }
 
+.active-nav-link {
+    color: rgb(246,110,72) !important;
+    border-bottom: 1px rgb(246,110,72) solid;
+}
+
 .bg-custom{
     background-color:black;
 }
@@ -120,6 +125,12 @@ a:hover *{
     // top: 50%;
     // -ms-transform: translateY(-50%);
     // transform: translateY(-50%);
+}
+
+@media(max-width: 768px) {
+    .main-banner{
+        margin-top: 5vh;
+    }
 }
 
 // INDEX PAGE CONTACT CARD

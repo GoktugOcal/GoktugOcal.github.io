@@ -8,9 +8,16 @@
         <div class="col-sm-12 col-md-9 col-lg-10" style="">
             <div class=".ml-auto" id="navbarNavAltMarkup">
                 <div class="navbar-nav row">
-                <a class="col-4 col-sm-4 col-md-1 nav-link" href="/index.html">Home</a>
+                    {% for item in site.data.navbar_items %}
+                        {% if page.title == item.page_name %}
+                            <a class="col-4 col-sm-4 col-md-1 nav-link active-nav-link" href={{ item.href }}>{{ item.item_name }}</a>
+                        {% else %}
+                            <a class="col-4 col-sm-4 col-md-1 nav-link" href={{ item.href }}>{{ item.item_name }}</a>
+                        {% endif %}
+                    {% endfor %}
+                <!-- <a class="col-4 col-sm-4 col-md-1 nav-link" href="/index.html">Home</a>
                 <a class="col-4 col-sm-4 col-md-1 nav-link" href="/blog.html">Blog</a>
-                <a class="col-4 col-sm-4 col-md-1 nav-link" href="/about.html">About</a>
+                <a class="col-4 col-sm-4 col-md-1 nav-link" href="/about.html">About</a> -->
                 </div>
             </div>
         </div>

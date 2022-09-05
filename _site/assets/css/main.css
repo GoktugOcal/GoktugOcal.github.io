@@ -24,6 +24,8 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .nav-link { text-align: center; }
 
+.active-nav-link { color: #f66e48 !important; border-bottom: 1px #f66e48 solid; }
+
 .bg-custom { background-color: black; }
 
 li { display: inline; }
@@ -33,6 +35,8 @@ a * { text-decoration: none; display: inline-block; color: black; }
 a:hover * { color: gray; }
 
 .main-banner { margin-top: 20vh; }
+
+@media (max-width: 768px) { .main-banner { margin-top: 5vh; } }
 
 .index-contact { margin-top: 15vh; bottom: 0; padding: 10px; background-color: rgba(246, 110, 72, 0.15); border-radius: 10px; }
 

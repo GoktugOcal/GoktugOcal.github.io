@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Home"
+title: "goktugocal"
 ---
 
 <div class="main-banner" style="margin-bottom: 50px;">
@@ -12,7 +12,7 @@ title: "Home"
          <div class="col-xl-8 col-xs-12 home-text">
             <p style="font-family: 'Caveat',  Arial, sans-serif; font-size: calc(20px + 0.52vw); line-height: 1; color: rgb(117, 117, 117);">SUP EVERYONE! I'M</p>
             <p style="font-family: 'poppinsbold',  Arial, sans-serif; font-size: calc(30px + 4.55vw); line-height: 1.5; display:inline-block; background: linear-gradient(135deg,#5335CF, #DE005E, #F66E48); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">GÖKTUĞ</p>
-            <p style="font-family: 'poppinslight',  Arial, sans-serif; font-size: calc(20px + 0.35vw); line-height: 1.5; color: rgb(171,171,171,1);">I'm a data scientist & MSc computer engineering student based in Istanbul with passion to cinema, video games and The Office.</p>
+            <p style="font-family: 'poppinslight',  Arial, sans-serif; font-size: calc(15px + 0.6vw); line-height: 1.5; color: rgb(171,171,171,1);">I'm a data scientist & MSc computer engineering student based in Istanbul with passion to cinema, video games and The Office.</p>
             <div class="center">
                <a class="icon-container" href="https://www.linkedin.com/in/goktugocal"><i class="fa fa-linkedin fa-2x my-icon"></i></a>
                <a class="icon-container" href="https://github.com/GoktugOcal"><i class="fa fa-github fa-2x my-icon"></i></a>

@@ -1,0 +1,19 @@
+[
+    {
+        "page_name" : "goktugocal",
+        "item_name" : "Home",
+        "href" : "/index.html"
+        },
+    
+    {
+        "page_name" : "Blog",
+        "item_name" : "Blog",
+        "href" : "/blog.html"
+        },
+    
+    {
+        "page_name" : "About",
+        "item_name" : "About",
+        "href" : "/about.html"
+        }
+    ]
