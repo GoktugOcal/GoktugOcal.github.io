@@ -61,11 +61,28 @@
     }
 }
 
-
-
 .navbar-brand {
+    text-align: center;
     padding-right: 20px;
     border-right: 1px #909090 solid;
+}
+
+@media(max-width: 768px) {
+    .navbar-brand {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        border-right: 0px #909090 solid;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link {
+    text-align: center;
 }
 
 .bg-custom{
