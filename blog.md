@@ -13,7 +13,11 @@ title: "Blog"
             <a href="{{ post.url }}">
                 <div class="row">
                     <div class="col-md-4 col-sm-12 postcard-image">
-                        <img class="postcard-image-img" src="{{ post.cover }}" alt="There will be blood" width="100%">
+                        {% if post.cover %}
+                            <img class="postcard-image-img" src="{{ post.cover }}" width="100%">
+                        {% else %}
+                            <img class="postcard-image-img" style="background-color: var(--white-2);" width="100%">
+                        {% endif %}
                     </div>
                     <div class="col-md-8 col-sm-12">
                         <h1 class="postcard-text-title">{{ post.title }}</h1>

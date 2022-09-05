@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang=" en-US ">
+
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Customize Your Jekyll Website - goktugocal</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
+
+    <link rel="stylesheet" href="/assets/css/post.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom justify-content-center">
+    <div class="row col-md-11 col-sm-12 .ml-auto">
+            <a class="navbar-brand">goktugocal</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <!-- <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup"> -->
+        <div class="col-sm-12 col-md-9 col-lg-10" style="">
+            <div class=".ml-auto" id="navbarNavAltMarkup">
+                <div class="navbar-nav row">
+                    
+                        
+                            <a class="col-4 col-sm-4 col-md-1 nav-link" href=/index.html>Home</a>
+                        
+                    
+                        
+                            <a class="col-4 col-sm-4 col-md-1 nav-link" href=/blog.html>Blog</a>
+                        
+                    
+                        
+                            <a class="col-4 col-sm-4 col-md-1 nav-link" href=/about.html>About</a>
+                        
+                    
+                <!-- <a class="col-4 col-sm-4 col-md-1 nav-link" href="/index.html">Home</a>
+                <a class="col-4 col-sm-4 col-md-1 nav-link" href="/blog.html">Blog</a>
+                <a class="col-4 col-sm-4 col-md-1 nav-link" href="/about.html">About</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <div>
+    <div class="row justify-content-center" style="margin-top:10px;">
+        <img class="col-xl-4 col-lg-6 col-md-6 col-sm-10 col-11" src="">
+    </div>
+    <div class="row justify-content-center">,
+        <section class="article col-xl-4 col-lg-6 col-md-6 col-sm-10 col-11">
+            <div class="article-header">
+                <h2 class="article-title">Customize Your Jekyll Website</h2>
+                <small class="date">16 Sep 2021</small>
+                <div class="tags">
+                    
+                        <div class="tag" style="background-color:  " href="/blog/ruby">ruby</div>
+                    
+                        <div class="tag" style="background-color:  " href="/blog/jekyll">jekyll</div>
+                    
+                </div>
+            </div>
+            <div class="content"><p>This article is part of a series showing you how to quickly and freely build and host your own <a href="https://jekyllrb.com/">Jekyll</a> blog on <a href="https://pages.github.com/">GitHub Pages</a>. This series will also cover more advanced topics like adding a comment system directly in our code using <a href="https://staticman.net/">Staticman</a> and adding privacy-friendly but still free analytics using <a href="https://umami.is/">Umami</a>.</p>
+
+<p>I divided the tutorial into several parts:</p>
+
+<p>Now that we have started adding content to our website, let’s see how we can customize its appearance.</p>
+
+<h2 id="how-jekyll-generates-pages">How Jekyll generates pages</h2>
+
+<p>One of the reasons I like <em>Jekyll</em> is that it provides you a very clean directory as it hides most of the magic behind the website creation.
+However, the drawback is that it is easy to feel lost and not to know how to update your theme when it comes to customizing it.</p>
+
+<p>Indeed, layouts are defined by your theme and are not present in your local folder.</p>
+
+<p>So before doing anything, we need to look at our <a href="https://github.com/jekyll/minima">minima theme repository</a>. Please make sure you look at the branch of your current version.
+In my case, it is the 2.5 one that is installed (you can have this info in the <code class="language-plaintext highlighter-rouge">Gemfile</code> file), so I am looking at the <a href="https://github.com/jekyll/minima/tree/2.5-stable">2.5-stable branch</a>.</p>
+
+<p>Our blog structure mainly relies on two folders:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_layouts</code>: contains the layouts which are used in the Front Matter metadata of each markdown file.</li>
+  <li><code class="language-plaintext highlighter-rouge">_includes</code>: contains snippets of HTML code that are used in layouts.</li>
+</ul>
+
+<p>For instance, if we look at the code of the <code class="language-plaintext highlighter-rouge">post</code> layout, we see the following (shortened for comprehension).</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- _layouts/post.html --&gt;</span>
+---
+layout: default
+---
+<span class="nt">&lt;article</span>
+  <span class="na">class=</span><span class="s">"post h-entry"</span>
+  <span class="na">itemscope</span>
+  <span class="na">itemtype=</span><span class="s">"http://schema.org/BlogPosting"</span>
+<span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"post-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"post-title p-name"</span> <span class="na">itemprop=</span><span class="s">"name headline"</span><span class="nt">&gt;</span>
+      {{ page.title | escape }}
+    <span class="nt">&lt;/h1&gt;</span>
+    ...
+  <span class="nt">&lt;/header&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content e-content"</span> <span class="na">itemprop=</span><span class="s">"articleBody"</span><span class="nt">&gt;</span>{{ content }}<span class="nt">&lt;/div&gt;</span>
+  ...
+<span class="nt">&lt;/article&gt;</span>
+</code></pre></div></div>
+
+<p>There is a lot to comment on here.</p>
+
+<p>The first thing we see is that the blog layout uses the <code class="language-plaintext highlighter-rouge">default</code> layout.
+The way layout nesting works is that everything that you have below your Front Matter will be injected in the <code class="language-plaintext highlighter-rouge">{{ content }}</code> variable of its parent layout.</p>
+
+<p>For instance when you write a blog post using this layout, its content is injected in the <code class="language-plaintext highlighter-rouge">&lt;div class="post-content e-content" itemprop="articleBody"&gt;{{ content }}&lt;/div&gt;</code> block.</p>
+
+<p>We can also see the use of Front Matter metadata with the title of the post.
+The title is displayed using the <code class="language-plaintext highlighter-rouge">page</code> variable, which contains all the variables defined in the Front Matter of a template.</p>
+
+<p>These variables can be overridden by the children of the template. In this case, there is no title defined in the Front Matter of our template, it only makes sense for posts using this template.</p>
+
+<p>Now, if we look at the default layout, this is what we see.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- _layouts/default.html --&gt;</span>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"{{ page.lang | default: site.lang | default: 'en' }}"</span><span class="nt">&gt;</span>
+  {% include head.html %}
+
+  <span class="nt">&lt;body&gt;</span>
+    {% include header.html %}
+
+    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"page-content"</span> <span class="na">aria-label=</span><span class="s">"Content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"wrapper"</span><span class="nt">&gt;</span>{{ content }}<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/main&gt;</span>
+
+    {% include footer.html %}
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>The default layout represents the base structure of all our pages.
+Besides the <code class="language-plaintext highlighter-rouge">content</code> variable where the child layout is injected, it uses several <code class="language-plaintext highlighter-rouge">include</code> to inject HTML code.</p>
+
+<p>Let’s now dive into them and start customizing our blog by adding a favicon.</p>
+
+<h2 id="adding-a-favicon">Adding a favicon</h2>
+
+<p>Let’s start gently by adding a favicon to our website. If you are familiar with HTML, you know that the favicon is defined in the <code class="language-plaintext highlighter-rouge">head</code> tag. For this theme, it is the <code class="language-plaintext highlighter-rouge">_includes/head.html</code> file that contains this tag.</p>
+
+<p>You can override any file of your theme by putting it in your own project.
+In this case, we can create our own <code class="language-plaintext highlighter-rouge">_includes/head.html</code>, copy the code from GitHub and modify it to add our favicon.</p>
+
+<p>For my favicon, I generated one using <a href="https://favicon.io/emoji-favicons/lion">a lion emoji</a> for the sake of the exercise.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- _includes/head.html --&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span> <span class="nt">/&gt;</span>
+  {% seo %}
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"{{ '/assets/main.css' | relative_url }}"</span> <span class="nt">/&gt;</span>
+  {% feed_meta %} 
+  {% if jekyll.environment == 'production' and site.google_analytics %} 
+    {% include google-analytics.html %} 
+  {% endif %}
+
+  <span class="nt">&lt;link</span>
+    <span class="na">rel=</span><span class="s">"apple-touch-icon"</span>
+    <span class="na">sizes=</span><span class="s">"180x180"</span>
+    <span class="na">href=</span><span class="s">"{{ '/apple-touch-icon.png' | relative_url }}"</span>
+  <span class="nt">/&gt;</span>
+  <span class="nt">&lt;link</span>
+    <span class="na">rel=</span><span class="s">"icon"</span>
+    <span class="na">type=</span><span class="s">"image/png"</span>
+    <span class="na">sizes=</span><span class="s">"32x32"</span>
+    <span class="na">href=</span><span class="s">"{{ '/favicon-32x32.png' | relative_url }}"</span>
+  <span class="nt">/&gt;</span>
+  <span class="nt">&lt;link</span>
+    <span class="na">rel=</span><span class="s">"icon"</span>
+    <span class="na">type=</span><span class="s">"image/png"</span>
+    <span class="na">sizes=</span><span class="s">"16x16"</span>
+    <span class="na">href=</span><span class="s">"{{ '/favicon-16x16.png' | relative_url }}"</span>
+  <span class="nt">/&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+
+<h2 id="modifying-the-header">Modifying the header</h2>
+
+<p>The same way we overrode our <code class="language-plaintext highlighter-rouge">head.html</code> fille, we can override any file to customize your website as we want.</p>
+
+<p>For instance, let’s modify our header by adding our new logo.</p>
+
+<p>To do so we need to add and modify the <code class="language-plaintext highlighter-rouge">_includes/header.html</code> file.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- _includes/header.html --&gt;</span> 
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"site-header"</span> <span class="na">role=</span><span class="s">"banner"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"wrapper"</span><span class="nt">&gt;</span>
+    {% assign default_paths = site.pages | map: "path" %} 
+    {% assign page_paths = site.header_pages | default: default_paths %}
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"site-title"</span> <span class="na">rel=</span><span class="s">"author"</span> <span class="na">href=</span><span class="s">"{{ '/' | relative_url }}"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ 'favicon-32x32.png' | relative_url }}"</span> <span class="nt">/&gt;</span>
+      {{ site.title | escape }}
+    <span class="nt">&lt;/a&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+</code></pre></div></div>
+
+<h2 id="customizing-our-css">Customizing our CSS</h2>
+
+<p>There are several ways to modify our CSS. As you can see in the <code class="language-plaintext highlighter-rouge">head.html</code> file, CSS is currently pulled from <code class="language-plaintext highlighter-rouge">assets/main.css</code>.
+In the development file, it is actually a <code class="language-plaintext highlighter-rouge">scss</code> file that is built from the <code class="language-plaintext highlighter-rouge">_sass</code> directory.</p>
+
+<p>An option to customize our css is to copy/paste the <code class="language-plaintext highlighter-rouge">_sass</code> directory and edit its files, the same we did for the head file.</p>
+
+<p>Another possibility is to generate a new file that will be loaded after the theme css, so that the rules we put in it will override the default ones. This is the solution I will show you now.</p>
+
+<p>First, let’s create the <code class="language-plaintext highlighter-rouge">assets/main.scss</code> file with the following code.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// assets/main.scss</span>
+<span class="nt">---</span>
+<span class="nt">---</span>
+
+<span class="o">@</span><span class="nt">import</span> <span class="s2">"minima"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"custom"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Compared to the default file, I just added an import of the file <code class="language-plaintext highlighter-rouge">custom</code>. We can now create this file in the <code class="language-plaintext highlighter-rouge">_sass</code> folder and add some css.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _sass/custom.scss</span>
+<span class="nc">.site-title</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+  <span class="k">&amp;</span><span class="nd">:visited</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Here I modify the site title color to match our lion. My main point is to show you how you can do it, it is up to you to decide how you want to style your website.</p>
+
+<h2 id="adding-a-featured-image-to-our-posts">Adding a featured image to our posts</h2>
+
+<p>Something you will see in almost every blog is a featured image displayed in the blog list and at the top of an article.</p>
+
+<p>Unfortunately, this is not currently managed by <em>Jekyll</em>, so let’s implement this feature ourselves.</p>
+
+<p>This time we want to modify the blog layout directly. We can create our own version in <code class="language-plaintext highlighter-rouge">_layouts/post.html</code>.</p>
+
+<p>What we are going to do is to check for a <code class="language-plaintext highlighter-rouge">featured_image</code> variable, and if it exists, we will display it on top of our title by adding the following snippet.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if page.featured_image %}
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"featured-image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ '/assets/' | append: page.featured_image | relative_url }}"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+{% endif %}
+</code></pre></div></div>
+
+<p>Let’s add a featured image to our last post. Put the image you want in your assets folder and add its name in the post metadata.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Write</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">Post"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2021-06-31</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="s">jekyll blogging</span>
+<span class="na">featured_image</span><span class="pi">:</span> <span class="s">featured-image.jpg</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>We can then add some CSS to our <code class="language-plaintext highlighter-rouge">custom.scss</code> file to style it.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _sass/custom.scss</span>
+<span class="nc">...</span> 
+<span class="nc">.featured-image</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+
+  <span class="nt">img</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">max-height</span><span class="p">:</span> <span class="m">250px</span><span class="p">;</span>
+    <span class="nl">object-fit</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Here is the result.</p>
+
+<p><img src="/assets/images/2021-09-16-post.png" alt="Post With Image" /></p>
+
+<h2 id="updating-the-home-to-display-the-featured-image">Updating the home to display the featured image</h2>
+
+<p>Let’s improve our home page.</p>
+
+<p>First, copy the <code class="language-plaintext highlighter-rouge">home.html</code> in the <code class="language-plaintext highlighter-rouge">_layout</code> folder. Following the same principle as for the post layout, we can add our featured images.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- _layout/home.html --&gt;</span>
+--- 
+layout: default 
+---
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"home"</span><span class="nt">&gt;</span>
+  {% if page.title %}
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"page-heading"</span><span class="nt">&gt;</span>{{ page.title }}<span class="nt">&lt;/h1&gt;</span>
+  {% endif %} 
+  {{ content }} 
+  {% if site.posts.size &gt; 0 %}
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"post-list-heading"</span><span class="nt">&gt;</span>
+      {{ page.list_title | default: "Posts" }}
+    <span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"post-list"</span><span class="nt">&gt;</span>
+      {% for post in site.posts %}
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+          {% assign date_format = site.minima.date_format 
+            | default: "%b %-d, %Y" %}
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"post-meta"</span><span class="nt">&gt;</span>
+            {{ post.date | date: date_format }}
+          <span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;h3&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"post-link"</span> <span class="na">href=</span><span class="s">"{{ post.url | relative_url }}"</span><span class="nt">&gt;</span>
+              {{ post.title | escape }}
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/h3&gt;</span>
+          {% if site.show_excerpts %} 
+            {{ post.excerpt }} {% endif %}
+        <span class="nt">&lt;/div&gt;</span>
+        {% if post.featured_image %}
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"featured-image"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span>
+            <span class="na">src=</span><span class="s">"{{ '/assets/' | append: post.featured_image | relative_url }}"</span>
+          <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        {% endif %}
+      <span class="nt">&lt;/li&gt;</span>
+      {% endfor %}
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"rss-subscribe"</span><span class="nt">&gt;</span>
+      subscribe <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ '/feed.xml' | relative_url }}"</span><span class="nt">&gt;</span>via RSS<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  {% endif %}
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>And update our <code class="language-plaintext highlighter-rouge">custom.scss</code> file.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _sass/custom.scss</span>
+<span class="nc">...</span> <span class="nc">.post-list</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap-reverse</span><span class="p">;</span>
+
+  <span class="nt">div</span><span class="nd">:first-child</span> <span class="p">{</span>
+    <span class="nl">flex</span><span class="p">:</span> <span class="m">4</span> <span class="m">0</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.featured-image</span> <span class="p">{</span>
+    <span class="nl">flex</span><span class="p">:</span> <span class="m">1</span> <span class="m">0</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>And here is the result.</p>
+
+<p><img src="/assets/images/2021-09-16-home.gif" alt="Responsive Posts Image" /></p>
+
+<p>Here you are, you now have all the basics to create your personal blog at your own image.</p>
+
+<p>You can find the code for this part <a href="https://github.com/SimonDosda/gp-blog/tree/step-3-custom">here</a>.</p>
+</div>
+            </section>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

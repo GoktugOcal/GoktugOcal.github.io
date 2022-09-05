@@ -1,13 +1,24 @@
 ---
 layout: default
 ---
+<div>
+    <div class="row justify-content-center" style="margin-top:10px;">
+        <img class="col-xl-4 col-lg-6 col-md-6 col-sm-10 col-11" src="{{ page.cover }}">
+    </div>
+    <div class="row justify-content-center">,
+        <section class="article col-xl-4 col-lg-6 col-md-6 col-sm-10 col-11">
+            <div class="article-header">
+                <h2 class="article-title">{{page.title}}</h2>
+                <small class="date">{{page.date | date_to_string}}</small>
+                <div class="tags">
+                    {% for tag in page.tags %}
+                        <div class="tag" style="background-color: {{ site.data.tag_colors[0][tag] }} " href="/blog/{{ tag }}">{{ tag }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="content">{{content}}</div>
+            </section>
+    </div>
 
-<div class="post-banner" style="background-image: url({{ page.cover }});"></div>
-
-<div class="row col-12 justify-content-center">
-   <div class="col-md-6 col-sm-12 .ml-auto" style="width:100%">
-      <h1 class="section-title">{{ page.title }}</h1>
-      <p class="postcard-text-summary">{{ page.summary }}</p>
-      <p class="postcard-text-summary">{{ content }}</p>
-   </div>
 </div>
+
