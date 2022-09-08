@@ -22,6 +22,9 @@ The AI Spring can be described as the hoping period of AI, new approaches have c
 
 Lots of innovations have been made by researchers and technology companies throughout time. These innovations started with the perceptron theorem in 1958 and optimistic pictures of the [Symbolic AI](http://wiki.pathmind.com/symbolic-reasoning){:target="_blank"}, which is simply an AI system acting like the human brain with defined rules against symbols and abstract concepts, produced by the AI practitioners. But these perceptron models are very limited and the first *AI Winter* appeared after that optimism, the fundings have been disappeared. In early 80s, AI cathed a hype again with "expert systems" such as Japan's "Fifth Generation" project and US's "Strategic Computing Initiative". Expert systems relied on humans to create rules, therefore that kind of a system was unable to generalized towards various domains. As expected, all the fundings decreased again.
 
+About the time after that winter, Mitchell gives an anecdote as;
+>"Indeed, the late 1980’s marked the beginning of a new AI winter, and the field’s reputation suffered. When I received my PhD in 1990, I was advised not to use the term “artificial intelligence” on my job applications."
+
 After all those winters, the 
 
 
