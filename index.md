@@ -3,7 +3,7 @@ layout: default
 title: "goktugocal"
 ---
 
-<div class="main-banner" style="margin-bottom: 50px;">
+<div class="main-banner" style="margin-top: 20vh;">
    <div class="center" style="width: 100%;margin: 0 auto;height:100%;">
       <div class="row col-xl-8 col-lg-8 col-md-8 col-sm-10 col-12 align-items-center" style="margin: 0 auto;height:100%;">
          <div class="col-xl-4 col-xs-8" style="margin-bottom: 20px;">
