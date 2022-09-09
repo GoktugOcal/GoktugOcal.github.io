@@ -4,7 +4,7 @@ title: "Blog"
 ---
 
 
-<div class="row col-12 justify-content-center" style="margin: 0px;">
+<div class="blog row col-12 justify-content-center" style="margin: 0px;">
    <div class="col-lg-6 col-md-10 col-sm-12" style="padding: 0px;">
       <h1 class="section-title">All Posts</h1>
       <div class="col-12">
@@ -15,6 +15,7 @@ title: "Blog"
                     <div class="col-md-4 col-sm-12 postcard-image">
                         {% if post.cover %}
                             <img class="postcard-image-img" src="{{ post.cover }}" width="100%">
+                            <!--https://raw.githubusercontent.com/GoktugOcal/GoktugOcal.github.io/master-->
                         {% else %}
                             <img class="postcard-image-img" style="background-color: var(--white-2);" width="100%">
                         {% endif %}

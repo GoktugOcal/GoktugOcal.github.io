@@ -25,6 +25,7 @@
 html,
 body {
   font-family: "poppinsregular", monospace;
+
 }
 
 .content a {
@@ -45,6 +46,8 @@ body {
 /* } */
 
 .article {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Roboto', serif;
   margin-bottom: 3rem;
 }
 
@@ -52,7 +55,9 @@ body {
   margin-bottom: 4rem;
 }
 .article-title {
-  font-size: 2.4rem;
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  font-weight: 900;
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
   line-height: 140%;
@@ -92,9 +97,11 @@ body {
 }
 .content h1 {
   font-size: 2rem;
+  font-weight: bold;
 }
 .content h2 {
   font-size: 1.8rem;
+  font-weight: bold;
 }
 .content h3 {
   font-size: 1.6rem;

@@ -1,4 +1,4 @@
-I"á<div class="main-banner">
+I"€<div class="main-banner">
    <!-- <div class="row align-items-center" style="width: 50%;margin: 0 auto;height:100%;"> -->
    <div class="row col-md-6 col-sm-12 align-items-center" style="margin: 0 auto;height:100%;">
       <div class="col-xl-8 col-xs-12 order-xl-1 order-2">
@@ -18,6 +18,25 @@
    <div class="col-md-6 col-sm-12 .ml-auto" style="width:100%">
       <h1 class="section-title">Latest Posts</h1>
       <div class="col-12 postcards">
+         
+         <div class="col-12 postcard-container">
+            <div class="row col-12">
+               <a href="/2022/09/06/Why-AI-is-Harder-Than-We-Think.html">
+                  <div class="row postcard-image">
+                     <div class="col-md-4 col-sm-12 .ml-auto">
+                        <img class="postcard-image-img" src="/assets/img/why_ai_is_harder_than_we_think/ai.webp" alt="There will be blood" width="100%" />
+                     </div>
+                  </div>
+                  <div class="row col-12">
+                     <div class="col-md-4 gradient-overlay"></div>
+                     <div class="col-md-8">
+                        <h1 class="postcard-text-title">Why AI is Harder Than We Think?</h1>
+                        <p class="postcard-text-summary">why ai is hard bro</p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
          
          <div class="col-12 postcard-container">
             <div class="row col-12">

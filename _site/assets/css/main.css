@@ -18,7 +18,7 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .navbar-brand { text-align: center; padding-right: 20px; border-right: 1px #909090 solid; }
 
-@media (max-width: 768px) { .navbar-brand { width: 100%; text-align: center; padding-right: 0; border-right: 0px #909090 solid; } }
+@media (max-width: 768px) { .navbar-brand { width: 100%; text-align: center; padding-right: 0px; margin-right: 0px; border-right: 0px #909090 solid; } }
 
 .navbar-nav { display: flex; flex-direction: row; }
 
@@ -31,8 +31,6 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 li { display: inline; }
 
 a * { text-decoration: none; display: inline-block; color: black; }
-
-a:hover * { color: gray; }
 
 .main-banner { margin-top: 20vh; }
 
@@ -50,34 +48,13 @@ a:hover * { color: gray; }
 
 .my-icon:hover { color: #DE005E; }
 
-.postcard-container { width: 100%; min-height: 160px; margin-top: 10px; margin-bottom: 20px; transition: transform .1s; padding: 0px; padding-bottom: 10px; border-bottom: 1px #4b5162 solid; }
-
-.postcard-text { text-decoration: none; }
-
-.postcard-image { width: 100%; height: 100%; overflow: hidden; }
-
-.postcard-image-img { border-radius: 10px; object-fit: cover; aspect-ratio: 16/9; padding: 0px; margin-bottom: 10px; }
-
-.postcard-text-title { line-height: 1; font-size: calc(25px + 0.36vw); font-family: 'poppinsbold', sans-serif; }
-
-.postcard-text-summary { margin: 0px; font-size: calc(15px + 0.05vw); font-family: 'poppinsregular', sans-serif; }
-
-.date-info { line-height: 1; font-family: 'poppinslight', sans-serif; font-size: calc(10px + 0.05vw); }
-
 .gradient-overlay { height: inherit; background: linear-gradient(90deg, rgba(255, 255, 255, 0) 25%, white 100%); background-size: cover; }
 
 .center { margin: auto; }
 
-.post-banner { max-width: 100%; background-size: 100% auto; background-position: 0 50%; background-repeat: no-repeat; object-fit: cover; }
-
-.section-title { font-family: 'poppinsblack', sans-serif; margin-top: 5%; margin-bottom: 5%; }
-
+/* .post-banner{ max-width: 100%; // height: 500px; background-size: 100% auto; background-position: 0 50%; background-repeat: no-repeat; object-fit: cover; }*/
 .img-pp { display: block; margin-left: auto; margin-right: auto; max-width: calc(150px + 7.8vw); height: calc(150px + 7.8vw); object-fit: cover; }
 
 .rounded-circle { border-radius: 50% !important; }
-
-.tags { bottom: 0; left: 0; margin-top: 10px; }
-
-.tag { background-color: black; color: white; text-decoration: none; font-family: 'poppinsregular', sans-serif; font-size: calc(10px + 0.05vw); border-radius: 10px; padding-top: 3px; padding-bottom: 3px; padding-left: 10px; padding-right: 10px; display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
