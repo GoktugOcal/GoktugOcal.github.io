@@ -7,7 +7,7 @@ title: "goktugocal"
    <div class="center" style="width: 100%;margin: 0 auto;height:100%;">
       <div class="row col-xl-8 col-lg-8 col-md-8 col-sm-10 col-12 align-items-center" style="margin: 0 auto;height:100%;">
          <div class="col-xl-4 col-xs-8" style="margin-bottom: 20px;">
-            <img class="img-pp rounded-circle" src="assets/img/pp3.png" alt="">
+            <img class="img-pp rounded-circle" src="assets/img/pp3.webp" alt="">
          </div>
          <div class="col-xl-8 col-xs-12 home-text">
             <p style="font-family: 'Caveat',  Arial, sans-serif; font-size: calc(20px + 0.52vw); line-height: 1; color: rgb(117, 117, 117);">SUP EVERYONE! I'M</p>

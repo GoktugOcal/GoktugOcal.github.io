@@ -32,8 +32,6 @@ li { display: inline; }
 
 a * { text-decoration: none; display: inline-block; color: black; }
 
-.main-banner { margin-top: 20vh; }
-
 @media (max-width: 768px) { .main-banner { margin-top: 5vh; } }
 
 .index-contact { margin-top: 15vh; bottom: 0; padding: 10px; background-color: rgba(246, 110, 72, 0.15); border-radius: 10px; }

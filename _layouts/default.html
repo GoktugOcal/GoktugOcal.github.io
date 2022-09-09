@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/post.css" />
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/blog.css" />
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css" />
-
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/footer.css" />
 
 
     <!--FONTS-->
@@ -47,10 +47,11 @@
         }
     </style>
 </head>
-
-<body>
-    {% include navbar.html %}
-    {{ content}}
-</body>
-
+    <body>
+        {% include navbar.html %}
+        {{ content}}
+        {% if page.name != "index.md" %}
+            {% include footer.html %}
+        {% endif %}
+    </body>
 </html>
