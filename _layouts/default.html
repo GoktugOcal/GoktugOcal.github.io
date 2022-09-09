@@ -48,10 +48,14 @@
     </style>
 </head>
     <body>
-        {% include navbar.html %}
-        {{ content}}
-        {% if page.name != "index.md" %}
-            {% include footer.html %}
-        {% endif %}
+        <div class="page-container">
+            {% include navbar.html %}
+            <div class="content-container">
+                {{ content}}
+            </div>
+            {% if page.name != "index.md" %}
+                {% include footer.html %}
+            {% endif %}
+        </div>
     </body>
 </html>
