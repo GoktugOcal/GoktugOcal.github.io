@@ -1,0 +1,76 @@
+.btn-container{
+    padding: 0 1px;
+}
+.btn-about-mail{
+    font-family: "Poppins";
+    font-size: calc(13px + 0.35vw);
+    background-color: tomato;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 50px;
+    padding: 0.4rem 2rem;
+    color:white !important;
+}
+
+.btn-about-mail:hover{
+    font-weight: 700;
+    /* border: 2px solid; */
+    border-color: tomato;
+    /* border-width: 2px; */
+    background-color: whitesmoke;
+    color:tomato !important;
+}
+
+.btn-about-cv{
+    font-family: "Poppins";
+    font-size: calc(13px + 0.35vw);
+    background-color: #00af98;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 50px;
+    padding: 0.4rem 2rem;
+    color:white !important;
+}
+
+.btn-about-cv:hover{
+    font-weight: 700;
+    /* border: 2px solid; */
+    border-color: #00af98;
+    /* border-width: 2px; */
+    background-color: whitesmoke;
+    color:#00af98 !important;
+}
+
+.btn-contact{
+    width: 100%;
+    font-family: "Poppins";
+    font-size: calc(11px + 0.35vw);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 50px;
+    padding: 0.4rem 1.5rem;
+    color:white !important;
+}
+
+.btn-contact:hover {
+    font-weight: 700;
+    background-color: white !important;
+    color: black !important;
+}
+
+.btn-contact i{
+    color: inherit !important;
+}
+
+.buttons{
+    /* height: 40px; */
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10vh;
+}
+
+.contact{
+    /* display: flex;
+    align-items: flex-end; */
+    margin-bottom: 10vh;
+}

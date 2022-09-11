@@ -1,11 +1,8 @@
 ---
-layout: default
+layout: about
 title: "About"
 ---
-<div class="row col-12 justify-content-center" style="margin:0px;">
-    <div class="col-md-6 col-12 justify-content-center" style="margin-top: 15vh; text-align:center;">
-        <img src="https://media.giphy.com/media/xZsLh7B3KMMyUptD9D/giphy.gif" alt="this slowpoke moves" width="100%"/>
-        <p style="font-family:poppinsbold; font-size:calc(24px + 2vw); color:rgb(171,171,171,1);">Working on this page</p>
-    </div>
-</div>
 
+Hello, my name is **Göktuğ Öcal** and I am 24 years old **Data Scientist** from Istanbul. This is a personal blog about my interests.
+
+I am a **MSc student in Computer Engineerging** program of [**Bogazici University**](http://www.boun.edu.tr/en-US/Index) and I a recently working as a **Data Scientist** in [**Ford Otosan**](https://www.fordotosan.com.tr/en). I have graduated from Control and Automation Engineering undergraduate program of [**Istanbul Technical University**](https://www.itu.edu.tr/en/homepage).
