@@ -2,11 +2,21 @@
 <html lang="{{ site.lang | default: " en-US " }}">
 
 <head>
+    {% include analytics.html %}
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ site.title }} - {{ page.title }}</title>
 
     {% seo %}
+    {% if page.summary %}
+        <meta name="description" content='{{ page.summary }}'>
+        <meta name="og:description" content='{{ page.summary }}'>
+        <meta property="image" content="{{ page.cover }}">
+        <meta property="og:image" content="{{ page.cover }}">
+    {% else %}
+        <meta property="image" content="assets/img/favicon.png">
+        <meta property="og:image" content="assets/img/favicon.png">
+    {% endif %}
     
     <!-- CSS only -->
     <!-- JS, Popper.js, and jQuery -->

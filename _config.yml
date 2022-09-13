@@ -1,26 +1,24 @@
 url: "https://www.goktugocal.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "goktugocal" # the name of your site, e.g. ACME Corp.
-description: Goktug Ocal's Personal Website
+title: 'goktugocal'
 
 # Setup
 title:            goktugocal
 tagline:          'Göktuğ Öcal'
 email:            'goktugocal41@gmail.com'
-description:      'goktugocal.<br> My personal blog of Data Science.'
+description:      "Goktug Ocal's Personal Website. Data Science Engineering Movies and more."
 website:          https://www.goktugocal.com/
 url:              https://www.goktugocal.com/
-github_username:  goktugocal
-twitter_username: mrshovvtime
+github_username:  'goktugocal'
+twitter_username: 'mrshovvtime'
+linkedin_username: 'goktugocal'
+instagram_username: 'goktug.ocal'
 
 author:
   name:           'Göktuğ Öcal'
   url:            https://www.goktugocal.com/
 
-image:
-  path: /assets/img/favicon.png
-  height: 192
-  width: 192
+image: "/assets/img/favicon.png"
 
 plugins:
   - jekyll-target-blank
