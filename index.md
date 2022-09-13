@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "goktugocal"
+title: "Personal Homepage"
 ---
 
 <div class="main-banner" style="margin-top: 20vh;">
