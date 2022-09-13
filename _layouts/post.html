@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign read_time = page.content | number_of_words | divided_by: 200 %}
+
 <div>
     <div class="row justify-content-center" style="margin:0px; margin-top:10px;">
         <img class="col-xl-4 col-lg-6 col-md-6 col-sm-10 col-12" src="{{ page.cover }}">
@@ -9,7 +11,7 @@ layout: default
         <section class="article col-xl-4 col-lg-6 col-md-6 col-sm-10 col-12">
             <div class="article-header">
                 <h1 class="article-title">{{page.title}}</h1>
-                <small class="date">{{page.date | date_to_string}}</small>
+                <small class="date">{{page.date | date_to_string}} | {{ read_time }} min read</small>
                 <div class="tags">
                     {% for tag in page.tags %}
                         <div class="tag" style="background-color: {{ site.data.tag_colors[0][tag] }} " href="/blog/{{ tag }}">{{ tag }}</div>

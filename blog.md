@@ -9,6 +9,7 @@ title: "Blog"
       <h1 class="section-title">All Posts</h1>
       <div class="col-12">
          {% for post in site.posts %}
+         {% assign read_time = post.content | number_of_words | divided_by: 200 %}
          <div class="col-12 postcard-container">
             <a href="{{ post.url }}">
                 <div class="row">
@@ -27,7 +28,7 @@ title: "Blog"
                                 <p>Updated at {{ post.updated | date: "%d %b %Y" }}</p>
                                 <p> | Created at {{ post.date | date: "%d %b %Y" }}</p>
                             {% else %}
-                                <p>{{ post.date | date: "%d %b %Y" }}</p>
+                                <p>{{ post.date | date: "%d %b %Y" }} | {{read_time}} min read</p>
                             {% endif %}
                         </div>
                         <p class="postcard-text-summary">{{ post.summary }}</p>
