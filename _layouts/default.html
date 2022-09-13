@@ -10,11 +10,11 @@
     {% seo %}
     {% if page.summary %}
         <meta name="description" content='{{ page.summary }}'>
-        <meta name="og:description" content='{{ page.summary }}'>
-        <meta property="image" content="{{ page.cover }}">
+        <meta property="og:description" content='{{ page.summary }}'>
+        <meta name="image" content="{{ page.cover }}">
         <meta property="og:image" content="{{ page.cover }}">
     {% else %}
-        <meta property="image" content="assets/img/favicon.png">
+        <meta name="image" content="assets/img/favicon.png">
         <meta property="og:image" content="assets/img/favicon.png">
     {% endif %}
     
