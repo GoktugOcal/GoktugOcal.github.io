@@ -5,10 +5,20 @@
     {% include analytics.html %}
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ site.title }} - {{ page.title }}</title>
 
-    {% seo %}
-    {% if page.summary %}
+    <title>{{ site.title }} - {{ page.title }}</title>
+    <meta name="description" content="{% if page.summary %}{{ page.summary | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{% if page.summary %}{{ page.cover }}{% else %}{{ site.image }}{% endif %}" />
+    <meta property="og:site_name" content="Göktuğ Öcal's Blog">
+    <meta property="article:published_time" content="{{ page.date }}" />
+    <meta property="og:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description  }}{% endif %}">
+
+    <!-- {% if page.summary %}
         <meta name="description" content='{{ page.summary }}'>
         <meta property="og:description" content='{{ page.summary }}'>
         <meta name="image" content="{{ page.cover }}">
@@ -16,7 +26,7 @@
     {% else %}
         <meta name="image" content="assets/img/favicon.png">
         <meta property="og:image" content="assets/img/favicon.png">
-    {% endif %}
+    {% endif %} -->
     
     <!-- CSS only -->
     <!-- JS, Popper.js, and jQuery -->
