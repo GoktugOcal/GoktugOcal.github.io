@@ -10,9 +10,9 @@
                 <div class="navbar-nav row">
                     {% for item in site.data.navbar_items %}
                         {% if page.title == item.page_name %}
-                            <a class="col-4 col-sm-4 col-md-1 nav-link active-nav-link" href={{ item.href }}>{{ item.item_name }}</a>
+                            <a class="col-4 col-sm-4 col-md-1 nav-link active-nav-link" href={{ item.href }} title="{{ item.item_name }}">{{ item.item_name }}</a>
                         {% else %}
-                            <a class="col-4 col-sm-4 col-md-1 nav-link" href={{ item.href }}>{{ item.item_name }}</a>
+                            <a class="col-4 col-sm-4 col-md-1 nav-link" href={{ item.href }} title="{{ item.item_name }}">{{ item.item_name }}</a>
                         {% endif %}
                     {% endfor %}
                 <!-- <a class="col-4 col-sm-4 col-md-1 nav-link" href="/index.html">Home</a>

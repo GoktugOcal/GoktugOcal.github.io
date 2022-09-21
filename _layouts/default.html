@@ -9,6 +9,7 @@
     <title>{{ site.title }} - {{ page.title }}</title>
     <meta name="description" content="{% if page.summary %}{{ page.summary | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
 
+    <meta name="author" content="{{site.author.name}}">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
@@ -17,6 +18,15 @@
     <meta property="og:site_name" content="Göktuğ Öcal's Blog">
     <meta property="article:published_time" content="{{ page.date }}" />
     <meta property="og:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description  }}{% endif %}">
+
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@goktugocal" />
+    <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description  }}{% endif %}" />
+    <meta name="twitter:image" content="{% if page.summary %}{{ page.cover }}{% else %}{{ site.image }}{% endif %}" />
 
     <!-- {% if page.summary %}
         <meta name="description" content='{{ page.summary }}'>

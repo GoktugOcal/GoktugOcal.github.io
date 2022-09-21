@@ -11,7 +11,7 @@ title: "Blog"
          {% for post in site.posts %}
          {% assign read_time = post.content | number_of_words | divided_by: 200 %}
          <div class="col-12 postcard-container">
-            <a href="{{ post.url }}">
+            <a href="{{ post.url }}"  title="{{ post.title }}">
                 <div class="row">
                     <div class="col-md-4 col-sm-12 postcard-image">
                         {% if post.cover %}
