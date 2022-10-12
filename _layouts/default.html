@@ -5,6 +5,8 @@
     {% include analytics.html %}
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <meta charset="utf-8">
+    <link rel="canonical" href="https://www.goktugocal.com/" />
+
 
     <title>{{ site.title }} - {{ page.title }}</title>
     <meta name="description" content="{% if page.summary %}{{ page.summary | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
@@ -18,9 +20,6 @@
     <meta property="og:site_name" content="Göktuğ Öcal's Blog">
     <meta property="article:published_time" content="{{ page.date }}" />
     <meta property="og:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description  }}{% endif %}">
-
-    <meta name="robots" content="noindex" />
-    <meta name="googlebot" content="noindex" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@goktugocal" />
