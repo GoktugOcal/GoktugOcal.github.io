@@ -6,7 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title:            goktugocal
 tagline:          'Göktuğ Öcal'
 email:            'goktugocal41@gmail.com'
-description:      "Goktug Ocal's Personal Website, basically the things that I want to talk about. Data Science posts, projects that I made, things that I love to learn and describe to you. Movies reviews that I love, and more."
+description:      "Göktuğ Öcal's Personal Website, basically the things that I want to talk about. Data Science posts, projects that I made, things that I love to learn and describe to you. Movies reviews that I love, and more."
 website:          https://www.goktugocal.com/
 github_username:  'goktugocal'
 linkedin_username: 'goktugocal'
