@@ -25,12 +25,13 @@
 html,
 body {
   font-family: "poppinsregular", monospace;
+  letter-spacing: 0.5px;
+  font-weight: 300;
   min-height: 100vh; 
   margin: 0; 
   
   display: grid;
   grid-template-rows: auto 1fr auto;
-
 }
 
 .content a {
@@ -66,11 +67,12 @@ body {
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
   line-height: 140%;
+  color: #414145;
 }
 
 .article .date {
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 0.8rem;
 }
 .categories {
@@ -95,8 +97,11 @@ body {
 
 .content * {
   line-height: 180%;
+  font-size: 1.1rem;
 }
 .content p {
+  font-size: 1.1rem;
+  text-align:justify;
   margin: 0 0 1.75rem 0;
   padding: 0;
 }
@@ -118,7 +123,7 @@ body {
   font-size: 1.2rem;
 }
 .content h6 {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .content h1,
 .content h2,
@@ -141,6 +146,11 @@ body {
 .content ul {
   margin-left: 1rem;
   margin-bottom: 1.75rem;
+}
+li p:before {
+  content: "●";
+  display: inline-block;
+  margin-right: 1rem;
 }
 .content ol {
   margin-left: 1.75rem;
@@ -197,6 +207,14 @@ body {
 
 .content img {
   cursor: zoom-in;
+}
+
+.content aside {
+  font-size: 1.1rem;
+  text-align:justify;
+  background-color: #f1f1f1;
+  margin: 0 0 1.75rem 0;
+  padding: 1rem;
 }
 
 #lightbox {

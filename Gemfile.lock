@@ -82,7 +82,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-target-blank (~> 2.0)
-  webrick
+  webrick (~> 1.7)
 
 BUNDLED WITH
-   2.4.5
+   2.3.21
