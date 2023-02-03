@@ -61,8 +61,9 @@ a:hover *{
 }
 
 .postcard-text-title{
+    font-family: "poppinsregular", serif;
     line-height: 1;
-    font-size: calc(25px + 0.36vw); //32px
+    font-size: calc(25px + 0.36vw);
     /*font-family: 'poppinsbold', sans-serif;*/
 }
 
@@ -73,11 +74,13 @@ a:hover *{
 }
 
 .date-info {
+    font-family: "poppinsregular", serif;
     line-height: 1;
     font-size: calc(10px + 0.05vw); 
 }
 
 .tags {
+    font-family: "poppinsregular", serif;
     /* display: inline-block;
     // float: none;
     // padding: inherit;
