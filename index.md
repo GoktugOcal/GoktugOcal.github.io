@@ -16,6 +16,7 @@ title: "Personal Homepage"
             <div class="center">
                <a class="icon-container" rel="nofollow" href="https://www.linkedin.com/in/goktugocal"><i class="fa fa-linkedin fa-2x my-icon"></i></a>
                <a class="icon-container" rel="nofollow" href="https://github.com/GoktugOcal"><i class="fa fa-github fa-2x my-icon"></i></a>
+               <a class="icon-container" rel="nofollow" href="https://medium.com/@goktugocal41"><i class="fa fa-medium fa-2x my-icon"></i></a>
                <a class="icon-container" rel="nofollow" href="https://www.instagram.com/goktug.ocal/"><i class="fa fa-instagram fa-2x my-icon"></i></a>
                <a class="icon-container" rel="nofollow" href="https://open.spotify.com/user/mr41showtime?si=aa3902b9a7c74034"><i class="fa fa-spotify fa-2x my-icon"></i></a>
             </div>
