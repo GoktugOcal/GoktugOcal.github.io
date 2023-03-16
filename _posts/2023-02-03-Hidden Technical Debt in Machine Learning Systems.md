@@ -3,7 +3,7 @@ layout: post
 title: Hidden Technical Debt in Machine Learning Systems
 summary: "Technical Debt stands for the extra cost that arises in the long term that a team faces and results by selecting easy and quick delivery options."
 cover: "/assets/img/hidden_technical_debt_of_machine_learning_systems/iceberg.webp"
-img: "/assets/img/hidden_technical_debt_of_machine_learning_systems/png/iceberg.png"
+img: "/assets/img/hidden_technical_debt_of_machine_learning_systems/png/iceberg.jpg"
 tags: ["paper review"]
 
 published: true
