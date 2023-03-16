@@ -241,3 +241,8 @@ li p:before {
   background-color: black;
   border: 2px solid white;
 }
+
+.figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+}

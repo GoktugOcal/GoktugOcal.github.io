@@ -1,7 +1,37 @@
-I"(<div class="blog row col-12 justify-content-center" style="margin: 0px;">
+I"ç<div class="blog row col-12 justify-content-center" style="margin: 0px;">
    <div class="col-lg-6 col-md-10 col-sm-12" style="padding: 0px;">
       <h1 class="section-title">All Posts</h1>
       <div class="col-12">
+         
+         
+         <div class="col-12 postcard-container">
+            <a href="/2023/03/16/Neural-Architecture-Search.html" title="Neural Architecture Search (NAS) - Review, Research">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 postcard-image">
+                        
+                            <img class="postcard-image-img" src="/assets/img/nas/nas.webp" width="100%" />
+                            <!--https://raw.githubusercontent.com/GoktugOcal/GoktugOcal.github.io/master-->
+                        
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <h1 class="postcard-text-title">Neural Architecture Search (NAS) - Review, Research</h1>
+                        <div class="col-12 date-info" style="padding:0px;">
+                            
+                                <p>16 Mar 2023 | 15 min read</p>
+                            
+                        </div>
+                        <p class="postcard-text-summary">Neural Architecture Search is a field where the goal is finding best performing architecture with efficient search algorithms. Here are the review and some research about it.</p>
+                        <div class="tags">
+                            
+                                <div class="tag" style="background-color: Tomato;" href="/blog/deep learning">deep learning</div>
+                            
+                                <div class="tag" style="background-color: SteelBlue;" href="/blog/paper review">paper review</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </a>
+         </div>
          
          
          <div class="col-12 postcard-container">

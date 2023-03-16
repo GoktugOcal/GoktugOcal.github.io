@@ -1,6 +1,7 @@
 allowed-tags:
   - paper-review
   - news
+  - deep-learning
   - data-science
   - python
   - movie-review
