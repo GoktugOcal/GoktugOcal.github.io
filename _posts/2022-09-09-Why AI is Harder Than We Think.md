@@ -3,7 +3,7 @@ layout: post
 title: Why AI is Harder Than We Think?
 summary: "Melanie Mitchell published the paper 'Why AI is Harder Than We Think?' in 2021 and mentions the misinterpretation of AI."
 cover: "/assets/img/why_ai_is_harder_than_we_think/ai.webp"
-img: "/assets/img/why_ai_is_harder_than_we_think/ai.png"
+img: "/assets/img/why_ai_is_harder_than_we_think/png/ai.png"
 tags: ["paper review"]
 
 published: true
