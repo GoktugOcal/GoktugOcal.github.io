@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Personal Homepage"
+title: "Göktuğ Öcal - Personal Blog"
 ---
 
 <div class="main-banner" style="margin-top: 20vh;">
