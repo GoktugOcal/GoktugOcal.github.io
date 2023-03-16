@@ -23,7 +23,7 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Neural Architecture Search (NAS) - Review, Research">
-    <meta property="og:url" content="http://localhost:4000/2023/03/16/Neural-Architecture-Search.html">
+    <meta property="og:url" content="https://www.goktugocal.com/2023/03/16/Neural-Architecture-Search.html">
     <meta property="og:image" content="/assets/img/nas/nas.webp" />
     <meta property="og:site_name" content="Göktuğ Öcal's Blog">
     <meta property="article:published_time" content="2023-03-16 00:00:00 +0300" />
@@ -177,14 +177,9 @@
 
 <p>AutoML has become a very important research topic since it enables people with limited machine learning background knowledge to use machine learning models easily. In the context of deep learning, and actually also as a subtopic of AutoML, NAS aims to search for the best neural network architecture for the given learning task and the dataset has become an effective computational tool in the field.</p>
 
-<figure>
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjA2YmZiMzU4NWVjMDI4NGY3NmQxZmI2YzY3ZWE5YjE1ZjQ0OTQyYSZjdD1n/PibODdY9C5xiKzmRhW/giphy.gif" alt="Where are you best architecture?" style="width:100%">
+<figure align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjA2YmZiMzU4NWVjMDI4NGY3NmQxZmI2YzY3ZWE5YjE1ZjQ0OTQyYSZjdD1n/PibODdY9C5xiKzmRhW/giphy.gif" alt="Where are you best architecture?">
   <figcaption class="figcaption">Where are you best architecture?</figcaption>
-</figure>
-
-<figure>
-  <img src="" alt="" style="width:100%">
-  <figcaption class="figcaption"></figcaption>
 </figure>
 
 <p>In a neural architecture there are multiple factors to consider such as the architecture itself, hyperparameters, and training parameters, and finding the most suitable model configuration requires lots of time and resources. Therefore an efficient NAS algorithm would be life-saving for practitioners.</p>
@@ -214,14 +209,19 @@ Another definition of the goal is to find architectures that achieve high predic
   </li>
 </ul>
 
+<figure align="center">
+  <img src="/assets/img/nas/basicNAS.webp" alt="Basic steps in NAS">
+  <figcaption class="figcaption">Basic steps in NAS</figcaption>
+</figure>
+
 <h2 id="researches">Researches</h2>
 
 <h3 id="neural-architecture-search-with-reinforcement-learning-zoph-et-al-2016">Neural Architecture Search with Reinforcement Learning (<a href="https://arxiv.org/pdf/1611.01578.pdf" target="_blank" rel="noopener noreferrer">Zoph et al., 2016</a>)</h3>
 
 <p>Neural Architecture Search with Reinforcement Learning(RL) is one of Google Brain’s research in the field of AutoML. The authors proposed a model construction strategy with Recurrent Neural Networks(RNN) and used RL to maximize the expected accuracy on the validation dataset.</p>
 
-<figure>
-  <img src="/assets/img/nas/RL-NAS.webp" alt="An overview of NAS with RL" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/RL-NAS.webp" alt="An overview of NAS with RL">
   <figcaption class="figcaption">An overview of NAS with RL</figcaption>
 </figure>
 
@@ -229,12 +229,10 @@ Another definition of the goal is to find architectures that achieve high predic
 
 <p>RL is okay, fair, and logical enough but how the network generation with RNN works? Computations for basic RNN and LSTM cells are generalized as a tree of steps that take inputs as the output and the hidden state of the previous time step to generate the current hidden state. RNN labels each node in the tree with a combination function (addition, elementwise multiplication, etc.) and an activation function (tanh, sigmoid, etc.) to merge two inputs and produce one output.</p>
 
-<figure>
-  <img src="/assets/img/nas/RNN-RL-NAS.webp" alt="Network generation with RNN" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/RNN-RL-NAS.webp" alt="Network generation with RNN">
   <figcaption class="figcaption">Network generation with RNN</figcaption>
 </figure>
-
-<p>Network generation with RNN</p>
 
 <p>On the CIFAR-10 dataset, the proposed model by the RNN and RL-powered NAS method has achieved a test error rate of 3.65, which is 0.09 percent better and 1.05x faster than the previous state-of-the-art model. But, this method is very computationally expensive; they have used 800 GPUs and the process has lasted 28 days. HUGE.</p>
 
@@ -253,8 +251,8 @@ Another definition of the goal is to find architectures that achieve high predic
   </li>
 </ul>
 
-<figure>
-  <img src="/assets/img/nas/NASNet_CIFAR_ImageNet.webp" alt="Networks generated with NASNet for CIFAR-10 and ImageNet Tasks" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/NASNet_CIFAR_ImageNet.webp" alt="Networks generated with NASNet for CIFAR-10 and ImageNet Tasks">
   <figcaption class="figcaption">Networks generated with NASNet for CIFAR-10 and ImageNet Tasks</figcaption>
 </figure>
 
@@ -268,8 +266,8 @@ Another definition of the goal is to find architectures that achieve high predic
 
 <p>In the ENAS, parent, and child models are not trained from scratch, the parent model forces a child with the same architecture to share weight and the parent one is built and evaluated with that child model and weights. Once, the best model architecture is found, the final model is trained from zero.</p>
 
-<figure>
-  <img src="/assets/img/nas/param-sharing.webp" alt="Parameter sharing" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/param-sharing.webp" alt="Parameter sharing">
   <figcaption class="figcaption">Parameter sharing</figcaption>
 </figure>
 
@@ -301,8 +299,8 @@ Another definition of the goal is to find architectures that achieve high predic
   </li>
 </ul>
 
-<figure>
-  <img src="/assets/img/nas/auto-keras-resources.webp" alt="Resource usage of AutoKeras" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/auto-keras-resources.webp" alt="Resource usage of AutoKeras">
   <figcaption class="figcaption">Resource usage of AutoKeras</figcaption>
 </figure>
 
@@ -314,8 +312,8 @@ Another definition of the goal is to find architectures that achieve high predic
 
 <p>Basically, the computation procedure for architecture in the search space is represented as a directed acyclic graph where each node is a latent representation and each directed edge is associated with some operation.</p>
 
-<figure>
-  <img src="/assets/img/nas/darts.webp" alt="Steps of DARTS" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/darts.webp" alt="Steps of DARTS">
   <figcaption class="figcaption">Steps of DARTS from the original paper</figcaption>
 </figure>
 
@@ -325,8 +323,8 @@ Another definition of the goal is to find architectures that achieve high predic
 
 <p>As the name suggests, Auto-PyTorch relies on the PyTorch framework, another lovely fella. Auto-PyTorch is an AutoML framework targeted at tabular data that performs multi-fidelity optimization on a joint search space of architectural parameters and training hyperparameters for neural nets.</p>
 
-<figure>
-  <img src="/assets/img/nas/autopytorch.webp" alt="General overview of Auto-PyTorch" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/autopytorch.webp" alt="General overview of Auto-PyTorch">
   <figcaption class="figcaption">General overview of Auto-PyTorch</figcaption>
 </figure>
 
@@ -348,8 +346,8 @@ Another definition of the goal is to find architectures that achieve high predic
 
 <p>In this work, the focus is on few-shot learning, the problem of learning a new task with limited training data. Authors extended the model agnostic meta-learning approaches such as REPTILE, which only can employ a simple CNN. In MetaNAS, the task-learning algorithm, called gradient-based meta-learner, optimizes both initial task weights and task architecture. They used REPTILE, which is used for fixed architecture, for both meta-learning the set of weights and also incorporated REPTILE with DARTS in order to extend the architecture itself.</p>
 
-<figure>
-  <img src="/assets/img/nas/metaNas.webp" alt="General overview of MetaNAS" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/metaNas.webp" alt="General overview of MetaNAS">
   <figcaption class="figcaption">General overview of MetaNAS</figcaption>
 </figure>
 
@@ -359,8 +357,8 @@ Another definition of the goal is to find architectures that achieve high predic
 
 <p>The interesting thing in the proposed method, MetaD2A (Meta Dataset-to-Architecture), is there is an encoder-decoder approach with a set encoder and a graph decoder which is used to learn a latent space for datasets and neural architectures. The built framework is fed by a prepared dataset containing datasets and their corresponding neural architectures. Meta-trainer learns the optimum architecture for given datasets from the database by encoding the dataset to create the latent space representation.</p>
 
-<figure>
-  <img src="/assets/img/nas/rapid.webp" alt="General overview of Rapid" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/rapid.webp" alt="General overview of Rapid">
   <figcaption class="figcaption">General overview of Rapid from original paper</figcaption>
 </figure>
 

@@ -28,14 +28,9 @@ The majority of machine learning problems, including computer vision, speech rec
 
 AutoML has become a very important research topic since it enables people with limited machine learning background knowledge to use machine learning models easily. In the context of deep learning, and actually also as a subtopic of AutoML, NAS aims to search for the best neural network architecture for the given learning task and the dataset has become an effective computational tool in the field.
 
-<figure>
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjA2YmZiMzU4NWVjMDI4NGY3NmQxZmI2YzY3ZWE5YjE1ZjQ0OTQyYSZjdD1n/PibODdY9C5xiKzmRhW/giphy.gif" alt="Where are you best architecture?" style="width:100%">
+<figure align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjA2YmZiMzU4NWVjMDI4NGY3NmQxZmI2YzY3ZWE5YjE1ZjQ0OTQyYSZjdD1n/PibODdY9C5xiKzmRhW/giphy.gif" alt="Where are you best architecture?">
   <figcaption class="figcaption">Where are you best architecture?</figcaption>
-</figure>
-
-<figure>
-  <img src="" alt="" style="width:100%">
-  <figcaption class="figcaption"></figcaption>
 </figure>
 
 
@@ -63,14 +58,20 @@ Let's say we have built a useful search space that contains different architectu
 - **Performance Estimation Strategy.**
 Another definition of the goal is to find architectures that achieve high predictive performance. In order to evaluate the performance one strategy can be standard training and validation of the architecture on data, but this is costly. Recent research, therefore, focuses on developing methods that reduce the cost of these performance estimations.
 
+<figure align="center">
+  <img src="/assets/img/nas/basicNAS.webp" alt="Basic steps in NAS">
+  <figcaption class="figcaption">Basic steps in NAS</figcaption>
+</figure>
+
+
 ## Researches
 
 ### Neural Architecture Search with Reinforcement Learning ([Zoph et al., 2016](https://arxiv.org/pdf/1611.01578.pdf))
 
 Neural Architecture Search with Reinforcement Learning(RL) is one of Google Brain’s research in the field of AutoML. The authors proposed a model construction strategy with Recurrent Neural Networks(RNN) and used RL to maximize the expected accuracy on the validation dataset.
 
-<figure>
-  <img src="/assets/img/nas/RL-NAS.webp" alt="An overview of NAS with RL" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/RL-NAS.webp" alt="An overview of NAS with RL" >
   <figcaption class="figcaption">An overview of NAS with RL</figcaption>
 </figure>
 
@@ -78,12 +79,10 @@ Basically, RNN is proposing a new network architecture by acting as a sequence g
 
 RL is okay, fair, and logical enough but how the network generation with RNN works? Computations for basic RNN and LSTM cells are generalized as a tree of steps that take inputs as the output and the hidden state of the previous time step to generate the current hidden state. RNN labels each node in the tree with a combination function (addition, elementwise multiplication, etc.) and an activation function (tanh, sigmoid, etc.) to merge two inputs and produce one output.
 
-<figure>
-  <img src="/assets/img/nas/RNN-RL-NAS.webp" alt="Network generation with RNN" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/RNN-RL-NAS.webp" alt="Network generation with RNN" >
   <figcaption class="figcaption">Network generation with RNN</figcaption>
 </figure>
-
-Network generation with RNN
 
 On the CIFAR-10 dataset, the proposed model by the RNN and RL-powered NAS method has achieved a test error rate of 3.65, which is 0.09 percent better and 1.05x faster than the previous state-of-the-art model. But, this method is very computationally expensive; they have used 800 GPUs and the process has lasted 28 days. HUGE.
 
@@ -97,8 +96,8 @@ The main search method relies on the RL and the previous work that we mentioned 
 
 - **Reduction Cell:** Convolutional cells that return a feature map where the feature map height and width are reduced by a factor of two.
 
-<figure>
-  <img src="/assets/img/nas/NASNet_CIFAR_ImageNet.webp" alt="Networks generated with NASNet for CIFAR-10 and ImageNet Tasks" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/NASNet_CIFAR_ImageNet.webp" alt="Networks generated with NASNet for CIFAR-10 and ImageNet Tasks" >
   <figcaption class="figcaption">Networks generated with NASNet for CIFAR-10 and ImageNet Tasks</figcaption>
 </figure>
 
@@ -112,8 +111,8 @@ In this work, they have developed an approximation of NASnet but an efficient on
 
 In the ENAS, parent, and child models are not trained from scratch, the parent model forces a child with the same architecture to share weight and the parent one is built and evaluated with that child model and weights. Once, the best model architecture is found, the final model is trained from zero.
 
-<figure>
-  <img src="/assets/img/nas/param-sharing.webp" alt="Parameter sharing" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/param-sharing.webp" alt="Parameter sharing" >
   <figcaption class="figcaption">Parameter sharing</figcaption>
 </figure>
 
@@ -139,8 +138,8 @@ Since the Bayesian optimization is not suitable for tree-structured search space
 
 - A graph-level network morphism is defined to address the changes in the neural architectures based on layer-level network morphism.
 
-<figure>
-  <img src="/assets/img/nas/auto-keras-resources.webp" alt="Resource usage of AutoKeras" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/auto-keras-resources.webp" alt="Resource usage of AutoKeras" >
   <figcaption class="figcaption">Resource usage of AutoKeras</figcaption>
 </figure>
 
@@ -152,8 +151,8 @@ This method uses neither reinforcement learning nor evolutionary algorithms. The
 
 Basically, the computation procedure for architecture in the search space is represented as a directed acyclic graph where each node is a latent representation and each directed edge is associated with some operation.
 
-<figure>
-  <img src="/assets/img/nas/darts.webp" alt="Steps of DARTS" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/darts.webp" alt="Steps of DARTS" >
   <figcaption class="figcaption">Steps of DARTS from the original paper</figcaption>
 </figure>
 
@@ -163,8 +162,8 @@ They relaxed the search space to be continuous rather than searching across a di
 
 As the name suggests, Auto-PyTorch relies on the PyTorch framework, another lovely fella. Auto-PyTorch is an AutoML framework targeted at tabular data that performs multi-fidelity optimization on a joint search space of architectural parameters and training hyperparameters for neural nets.
 
-<figure>
-  <img src="/assets/img/nas/autopytorch.webp" alt="General overview of Auto-PyTorch" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/autopytorch.webp" alt="General overview of Auto-PyTorch" >
   <figcaption class="figcaption">General overview of Auto-PyTorch</figcaption>
 </figure>
 
@@ -186,8 +185,8 @@ The goal of meta-learning is to meta-learn an architecture with corresponding we
 
 In this work, the focus is on few-shot learning, the problem of learning a new task with limited training data. Authors extended the model agnostic meta-learning approaches such as REPTILE, which only can employ a simple CNN. In MetaNAS, the task-learning algorithm, called gradient-based meta-learner, optimizes both initial task weights and task architecture. They used REPTILE, which is used for fixed architecture, for both meta-learning the set of weights and also incorporated REPTILE with DARTS in order to extend the architecture itself.
 
-<figure>
-  <img src="/assets/img/nas/metaNas.webp" alt="General overview of MetaNAS" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/metaNas.webp" alt="General overview of MetaNAS" >
   <figcaption class="figcaption">General overview of MetaNAS</figcaption>
 </figure>
 
@@ -197,8 +196,8 @@ The performance of new architectures can therefore be predicted using this meta-
 
 The interesting thing in the proposed method, MetaD2A (Meta Dataset-to-Architecture), is there is an encoder-decoder approach with a set encoder and a graph decoder which is used to learn a latent space for datasets and neural architectures. The built framework is fed by a prepared dataset containing datasets and their corresponding neural architectures. Meta-trainer learns the optimum architecture for given datasets from the database by encoding the dataset to create the latent space representation.
 
-<figure>
-  <img src="/assets/img/nas/rapid.webp" alt="General overview of Rapid" style="width:100%">
+<figure align="center">
+  <img src="/assets/img/nas/rapid.webp" alt="General overview of Rapid" >
   <figcaption class="figcaption">General overview of Rapid from original paper</figcaption>
 </figure>
 
