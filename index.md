@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Göktuğ Öcal - Personal Blog"
+title: "Home"
 ---
 
 <div class="main-banner" style="margin-top: 20vh;">
@@ -20,29 +20,6 @@ title: "Göktuğ Öcal - Personal Blog"
                <a class="icon-container" rel="nofollow" href="https://www.instagram.com/goktug.ocal/"><i class="fa fa-instagram fa-2x my-icon"></i></a>
                <a class="icon-container" rel="nofollow" href="https://open.spotify.com/user/mr41showtime?si=aa3902b9a7c74034"><i class="fa fa-spotify fa-2x my-icon"></i></a>
             </div>
-            <!--<p style="font-family: 'Open Sans', sans-serif; font-size: calc(20px + 0.52vw); line-height: 1; color: rgb(255,153,0,1);">Istanbul based Data Scientist.</p>
-            <p style="font-family:gok 'Open Sans', sans-serif; font-size: calc(13px + 0.35vw); line-height: 1.2;">I'm a data scientist from Istanbul, working at REENGEN. I love cinema, every branch of sports, video games and The Office.</p>
-            <p style="font-family: 'Open Sans', sans-serif; font-size: calc(13px + 0.35vw); line-height: 1.2;">Contact with me.</p>-->
-            <!-- <div class="row center">
-               <div class="col-md-2 col-1"></div>
-               <div class="row col-md-8 col-12 index-contact"> 
-                  <div class="col-4">
-                     <img class="img-index-contact rounded-circle" src="assets/img/profile.jpg" alt="">
-                  </div>
-                  <div class="col-8" style="text-align: left;">
-                     <div style="position: absolute; top: 50%; transform: translateY(-50%);">
-                        <a style="font-family:'poppinsbold'; font-size:20px;">goktugocal</a>
-                        <div class="row">
-                           <a class="icon-container" href="https://www.linkedin.com/in/goktugocal"><i class="fa fa-linkedin fa-lg my-icon"></i></a>
-                           <a class="icon-container" href="https://github.com/GoktugOcal"><i class="fa fa-github fa-lg my-icon"></i></a>
-                           <a class="icon-container" href="https://www.instagram.com/goktug.ocal/"><i class="fa fa-instagram fa-lg my-icon"></i></a>
-                           <a class="icon-container" href="https://www.instagram.com/goktug.ocal/"><i class="fa fa-spotify fa-lg my-icon"></i></a>
-                        </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div> -->
          </div>
       </div>
    </div>
