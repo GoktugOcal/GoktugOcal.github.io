@@ -20,11 +20,11 @@ title: "analytics.go"
                             <img class="postcard-image-img" style="background-color: var(--white-2);" width="100%">
                         {% endif %}
                     </div>
-                    <div class="col-7 col-md-8 postcard-content">
+                    <div class="col-9 col-md-8 postcard-content">
                         <h1 class="postcard-text-title">{{ post.title }}</h1>
                         <p class="postcard-text-summary">{{ post.summary }}</p>
                     </div>
-                    <div class="tool-tags col-md-2 col-2">
+                    <div class="tool-tags col-md-2 col-0">
                         {% for tag in post.tags %}
                             <div class="tag" style="background-color: {{ site.data.tag_colors[0][tag] }};" href="/blog/{{ tag }}">{{ tag }}</div>
                         {% endfor %}
