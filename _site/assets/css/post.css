@@ -19,9 +19,9 @@
   -moz-window-dragging: none;
   -webkit-tap-highlight-color: transparent;
 }
-* img {
+/* * img {
   max-width: 100%;
-}
+} */
 html,
 body {
   font-family: "poppinsregular", monospace;

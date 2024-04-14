@@ -25,3 +25,8 @@ plugins:
 
 values:
   mathjax: true
+
+# Adding similar functionalities such as _posts
+collections:
+  tools:
+    output: true

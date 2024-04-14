@@ -1,5 +1,7 @@
 .blog{
     font-family: 'Roboto', serif;
+    text-decoration: none!important;
+    min-height: 90vh;
 }
 
 .blog h1{
@@ -35,6 +37,11 @@ a:hover *{
 
 .postcard-container:hover{
     /* transform: scale(1.1); */
+}
+
+.postcard-content{
+    max-height: 100%;
+    display: block;
 }
 
 .postcard-text{

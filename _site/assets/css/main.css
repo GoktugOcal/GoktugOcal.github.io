@@ -1,61 +1,165 @@
-body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+@font-face {
+  font-family: "BebasNeue";
+  src: url("assets/fonts/BebasNeue.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppinsblack";
+  src: url("../fonts/poppins-black-webfont.woff2") format("woff2"), url("../fonts/poppins-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinsbold";
+  src: url("../fonts/poppins-bold-webfont.woff2") format("woff2"), url("../fonts/poppins-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinslight";
+  src: url("../fonts/poppins-light-webfont.woff2") format("woff2"), url("../fonts/poppins-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinsregular";
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinssemibold";
+  src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../fonts/poppins-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.home-text {
+  text-align: left;
+}
 
-@font-face { font-family: "BebasNeue"; src: url("assets/fonts/BebasNeue.ttf") format("truetype"); }
+@media (max-width: 1200px) {
+  .home-text {
+    text-align: center;
+  }
+}
+.navbar-brand {
+  text-align: center;
+  padding-right: 20px;
+  border-right: 1px #909090 solid;
+}
 
-@font-face { font-family: 'poppinsblack'; src: url("../fonts/poppins-black-webfont.woff2") format("woff2"), url("../fonts/poppins-black-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+    margin-right: 0px;
+    border-right: 0px #909090 solid;
+  }
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
 
-@font-face { font-family: 'poppinsbold'; src: url("../fonts/poppins-bold-webfont.woff2") format("woff2"), url("../fonts/poppins-bold-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+.nav-link {
+  text-align: center;
+}
 
-@font-face { font-family: 'poppinslight'; src: url("../fonts/poppins-light-webfont.woff2") format("woff2"), url("../fonts/poppins-light-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+.active-nav-link {
+  color: rgb(246, 110, 72) !important;
+  border-bottom: 1px rgb(246, 110, 72) solid;
+}
 
-@font-face { font-family: 'poppinsregular'; src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+.bg-custom {
+  background-color: black;
+}
 
-@font-face { font-family: 'poppinssemibold'; src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../fonts/poppins-semibold-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+li {
+  display: inline;
+}
 
-.home-text { text-align: left; }
+a {
+  text-decoration: none !important;
+  color: black;
+}
 
-@media (max-width: 1200px) { .home-text { text-align: center; } }
+@media (max-width: 768px) {
+  .main-banner {
+    margin-top: 5vh;
+  }
+}
+.index-contact {
+  margin-top: 15vh;
+  bottom: 0;
+  padding: 10px;
+  background-color: rgba(246, 110, 72, 0.15);
+  border-radius: 10px;
+}
 
-.navbar-brand { text-align: center; padding-right: 20px; border-right: 1px #909090 solid; }
+.img-index-contact {
+  height: 100%;
+  max-width: calc(60px + 2vw);
+  height: calc(60px + 2vw);
+  object-fit: cover;
+}
 
-@media (max-width: 768px) { .navbar-brand { width: 100%; text-align: center; padding-right: 0px; margin-right: 0px; border-right: 0px #909090 solid; } }
+.index-contact-text {
+  text-decoration: none;
+  color: rgb(246, 110, 72);
+  font-family: "poppinsregular";
+  font-size: calc(10px + 0.5vw);
+}
 
-.navbar-nav { display: flex; flex-direction: row; }
+.icon-container {
+  margin-right: 20px;
+}
 
-.nav-link { text-align: center; }
+.my-icon {
+  color: #F66E48;
+  margin-top: 5px;
+}
 
-.active-nav-link { color: #f66e48 !important; border-bottom: 1px #f66e48 solid; }
+.my-icon:hover {
+  color: #DE005E;
+}
 
-.bg-custom { background-color: black; }
+.gradient-overlay {
+  height: inherit;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 25%, rgb(255, 255, 255) 100%);
+  background-size: cover;
+}
 
-li { display: inline; }
+.center {
+  margin: auto;
+}
 
-a * { text-decoration: none; display: inline-block; color: black; }
+.img-pp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(150px + 7.8vw);
+  height: calc(150px + 7.8vw);
+  object-fit: cover;
+}
 
-@media (max-width: 768px) { .main-banner { margin-top: 5vh; } }
+.rounded-circle {
+  border-radius: 50% !important;
+}
 
-.index-contact { margin-top: 15vh; bottom: 0; padding: 10px; background-color: rgba(246, 110, 72, 0.15); border-radius: 10px; }
+.contact-link {
+  color: #414145 !important;
+  margin-bottom: 1vh !important;
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: calc(12px + 0.6vw);
+}
 
-.img-index-contact { height: 100%; max-width: calc(60px + 2vw); height: calc(60px + 2vw); object-fit: cover; }
-
-.index-contact-text { text-decoration: none; color: #f66e48; font-family: 'poppinsregular'; font-size: calc(10px + 0.5vw); }
-
-.icon-container { margin-right: 20px; }
-
-.my-icon { color: #F66E48; margin-top: 5px; }
-
-.my-icon:hover { color: #DE005E; }
-
-.gradient-overlay { height: inherit; background: linear-gradient(90deg, rgba(255, 255, 255, 0) 25%, white 100%); background-size: cover; }
-
-.center { margin: auto; }
-
-.img-pp { display: block; margin-left: auto; margin-right: auto; max-width: calc(150px + 7.8vw); height: calc(150px + 7.8vw); object-fit: cover; }
-
-.rounded-circle { border-radius: 50% !important; }
-
-.contact-link { color: #414145 !important; margin-bottom: 1vh !important; font-family: Poppins; font-weight: 200; font-size: calc(12px + 0.6vw); }
-
-.contact-link-header { color: #414145 !important; margin-bottom: 1vh !important; font-family: Poppins; font-weight: 200; font-size: calc(8px + 0.5vw); }
+.contact-link-header {
+  color: #414145 !important;
+  margin-bottom: 1vh !important;
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: calc(8px + 0.5vw);
+}
 
 /*# sourceMappingURL=main.css.map */
