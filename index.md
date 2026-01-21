@@ -35,8 +35,8 @@ title: "Home"
          I hold an M.S. in Computer Engineering from <strong>Bogazici University</strong> and a B.S. in Control & Automation Engineering from <strong>Istanbul Technical University</strong>. I'm passionate about data science, F1, cinema, video games, and The Office.
       </p>
       <div class="landing-buttons">
-         <a class="btn btn-minimal-mail" href="mailto:goktugocal41@gmail.com" role="button">Mail me</a>
-         <a class="btn btn-minimal-cv" href="/assets/cv/Goktug_Ocal_CV.pdf" role="button" download="GoktugOcal_CV.pdf">Download my CV</a>
+         <a class="btn btn-outline" href="mailto:goktugocal41@gmail.com" role="button">Mail me</a>
+         <a class="btn btn-outline" href="/assets/cv/Goktug_Ocal_CV.pdf" role="button" download="GoktugOcal_CV.pdf">Download my CV</a>
       </div>
    </div>
 

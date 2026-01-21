@@ -4,13 +4,12 @@ title: Projects
 permalink: /projects/
 ---
 
-<div class="projects-container">
-    <h1 class="projects-title">Projects</h1>
-    <p class="about-text" style="text-align: center; max-width: 600px; margin: 0 auto 40px auto; color: #666;">
-        A collection of my work, ranging from data science experiments to web development projects.
-    </p>
-
-    <div class="projects-grid">
+<div class="blog">
+    <div class="section-header">
+         <h1 class="section-title title">Projects</h1>
+         <p class="section-subtitle text" style="margin-bottom: 40px;">A marked list of my projects, experiments and open-source contributions.</p>
+    </div>
+    <div class="col-12">
         {% for project in site.projects %}
             {% assign link_url = project.url %}
             {% assign is_external = false %}
@@ -23,44 +22,42 @@ permalink: /projects/
                 {% assign is_external = true %}
             {% endif %}
 
-            <a href="{{ link_url }}" class="project-card" {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
-                <div class="project-image-container">
-                    {% if project.image %}
-                        <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-image">
-                    {% else %}
-                        <!-- Fallback gradient if no image -->
-                        <div class="gradient-overlay" style="width:100%; height:100%; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);"></div>
+             <div class="col-12 postcard-container">
+                <a href="{{ link_url }}" title="{{ project.title }}" {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                    <div class="row">
+                        <div class="col-12">
+                             <h1 class="postcard-text-title title">
+                                {{ project.title }}
+                                {% if project.github_repo %} <i class="fa fa-github" style="font-size: 0.6em; vertical-align: middle; margin-left: 5px; color: #555;"></i>{% endif %}
+                                {% if project.external_url %} <i class="fa fa-external-link" style="font-size: 0.6em; vertical-align: middle; margin-left: 5px; color: #555;"></i>{% endif %}
+                             </h1>
+                             <p class="postcard-text-summary text">
+                                {% if project.description %}
+                                    {{ project.description }}
+                                {% else %}
+                                    {{ project.content | strip_html | truncate: 150 }}
+                                {% endif %}
+                             </p>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="col-12 date" style="padding:0px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 10px;">
+                    <span style="font-family: 'Oswald', sans-serif; font-size: 0.8rem; color: #666; margin-bottom: 0;">
+                        {% if project.date %}
+                            {{ project.date | date: "%d %b %Y" }}
+                        {% endif %}
+                    </span>
+                    {% if project.tags %}
+                    <span style="color: #444;">•</span>
+                    <span class="tags" style="font-family: 'Oswald', sans-serif; font-size: 0.8rem; color: #666; margin-bottom: 0;">
+                         {% for tag in project.tags %}
+                             {{ tag }}{% unless forloop.last %}, {% endunless %}
+                         {% endfor %}
+                    </span>
                     {% endif %}
                 </div>
-                <div class="project-content">
-                    <div class="project-type">
-                        {% if project.github_repo %}
-                            <i class="fa fa-github"></i> GitHub Project
-                        {% elsif is_external %}
-                            <i class="fa fa-link"></i> External Link
-                        {% else %}
-                            <i class="fa fa-file-text-o"></i> Case Study
-                        {% endif %}
-                    </div>
-                    <h2 class="project-title">{{ project.title }}</h2>
-                    <p class="project-description">
-                        {% if project.description %}
-                            {{ project.description | truncate: 120 }}
-                        {% else %}
-                            {{ project.content | strip_html | truncate: 120 }}
-                        {% endif %}
-                    </p>
-                    <div class="project-footer">
-                        <span class="project-link-text">
-                            {% if is_external %}
-                                View Project <i class="fa fa-external-link" style="margin-left: 5px; font-size: 0.8em;"></i>
-                            {% else %}
-                                Read More <i class="fa fa-arrow-right" style="margin-left: 5px; font-size: 0.8em;"></i>
-                            {% endif %}
-                        </span>
-                    </div>
-                </div>
-            </a>
+             </div>
         {% endfor %}
     </div>
 </div>

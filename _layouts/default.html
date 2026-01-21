@@ -33,45 +33,14 @@
     <meta name="twitter:image"
         content="{% if page.summary %}{{ page.img }}{% elsif page.name == 'index.md' %}{{ '/assets/img/og_main.jpg' }}{% elsif page.name == 'blog.md' %}{{ '/assets/img/og_blog.jpg' }}{% else %}{{ site.image }}{% endif %}" />
 
-    <!-- {% if page.summary %}
-        <meta name="description" content='{{ page.summary }}'>
-        <meta property="og:description" content='{{ page.summary }}'>
-        <meta name="image" content="{{ page.cover }}">
-        <meta property="og:image" content="{{ page.cover }}">
-    {% else %}
-        <meta name="image" content="assets/img/favicon.png">
-        <meta property="og:image" content="assets/img/favicon.png">
-    {% endif %} -->
-
-    <!-- CSS only -->
-    <!-- JS, Popper.js, and jQuery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
-    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
-    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
-    <!-- <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet"> -->
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
-
 
     <!--Favicon -->
     <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/assets/img/favicon.png">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/post.css" />
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/blog.css" />
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css" />
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/footer.css" />
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/about.css" />
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/analytics.css" />
-
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,7 +51,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
         rel="stylesheet">
     <!--Poppins-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
     <!-- Caveat -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <!-- Instrument Serif -->
@@ -95,6 +64,8 @@
     <!-- Lora -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+    <!-- JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 
     <script type="text/x-mathjax-config">
@@ -109,13 +80,6 @@
 
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
-
-    <style>
-        .container {
-            margin: 0 auto;
-            width: 50%;
-        }
-    </style>
 </head>
 <body{% if page.name=="index.md" %} class="homepage" {% endif %}>
     <div class="page-container">
