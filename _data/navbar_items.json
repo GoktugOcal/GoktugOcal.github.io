@@ -1,19 +1,22 @@
 [
     {
-        "page_name" : "Home",
-        "item_name" : "Home",
-        "href" : "/index.html"
-        },
-    
+        "page_name": "Home",
+        "item_name": "Home",
+        "href": "/index.html"
+    },
     {
-        "page_name" : "Personal Blog",
-        "item_name" : "Blog",
-        "href" : "/blog.html"
-        },
-    
+        "page_name": "Personal Blog",
+        "item_name": "Blog",
+        "href": "/blog.html"
+    },
     {
-        "page_name" : "About",
-        "item_name" : "About",
-        "href" : "/about.html"
-        }
+        "page_name": "About",
+        "item_name": "About",
+        "href": "/about.html"
+    },
+    {
+        "page_name": "Projects",
+        "item_name": "Projects",
+        "href": "/projects/"
+    }
 ]

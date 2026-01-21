@@ -1,25 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-custom justify-content-center">
-    <div class="row col-md-11 col-sm-12 .ml-auto">
-            <a class="navbar-brand">goktugocal</a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <!-- <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup"> -->
-        <div class="col-sm-12 col-md-9 col-lg-10" style="">
-            <div class=".ml-auto" id="navbarNavAltMarkup">
-                <div class="navbar-nav row">
-                    {% for item in site.data.navbar_items %}
-                        {% if page.title == item.page_name %}
-                            <a class="col-4 col-sm-4 col-md-1 nav-link active-nav-link" href={{ item.href }} title="{{ item.item_name }}">{{ item.item_name }}</a>
-                        {% else %}
-                            <a class="col-4 col-sm-4 col-md-1 nav-link" href={{ item.href }} title="{{ item.item_name }}">{{ item.item_name }}</a>
-                        {% endif %}
-                    {% endfor %}
-                <!-- <a class="col-4 col-sm-4 col-md-1 nav-link" href="/index.html">Home</a>
-                <a class="col-4 col-sm-4 col-md-1 nav-link" href="/blog.html">Blog</a>
-                <a class="col-4 col-sm-4 col-md-1 nav-link" href="/about.html">About</a> -->
-                </div>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent justify-content-center">
+    <div class="nav-container">
+        <div class="navbar-nav">
+            {% for item in site.data.navbar_items %}
+            {% if page.title == item.page_name %}
+            <a class="nav-link active-nav-link" href="{{ item.href }}" title="{{ item.item_name }}">{{ item.item_name
+                }}</a>
+            {% else %}
+            <a class="nav-link" href="{{ item.href }}" title="{{ item.item_name }}">{{ item.item_name }}</a>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
 </nav>

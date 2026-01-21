@@ -30,3 +30,5 @@ values:
 collections:
   tools:
     output: true
+  projects:
+    output: true

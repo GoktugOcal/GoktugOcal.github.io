@@ -16,34 +16,37 @@
     color: white;
 }
 
-.footer-container a{
-    color:inherit;
+.footer-container a {
+    color: inherit;
 }
 
-.btn-footer{
+.btn-footer {
     font-family: "Poppins";
     margin-top: 1em;
     border-radius: 50px;
     font-size: 0.8rem;
     padding: 0.2rem 0.75rem;
-    color:white !important;
+    color: white !important;
 }
 
-.btn-footer i{
+.btn-footer i {
     color: inherit !important;
 }
 
 
-.page-container{
+.page-container {
     position: relative;
     min-height: 100vh;
 }
 
 .content-container {
-    padding-bottom: 16rem;    /* Footer height */
+    margin: 2em;
+    padding-bottom: 16rem;
+    margin: 0 auto;
+    /* Footer height */
 }
 
-.btn-contact-footer{
+.btn-contact-footer {
     font-family: "Poppins";
     font-size: 0.8rem;
     background-color: #333;
@@ -51,7 +54,7 @@
     margin-bottom: 1em;
     border-radius: 50px;
     padding: 0.2rem 0.75rem;
-    color:white !important;
+    color: white !important;
 }
 
 .btn-contact-footer:hover {
@@ -60,6 +63,6 @@
     color: black !important;
 }
 
-.btn-contact-footer i{
+.btn-contact-footer i {
     color: inherit !important;
 }
