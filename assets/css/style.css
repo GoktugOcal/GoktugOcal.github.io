@@ -472,11 +472,20 @@ h6 {
     font-size: 0.8rem;
     display: inline-block;
     margin-top: 1rem;
+    transition: color 0.3s ease;
 }
 
 .footer-btn:hover {
     background-color: white;
     color: black !important;
+}
+
+.footer p {
+    transition: color 0.3s ease;
+}
+
+.footer p:hover {
+    color: #fff !important;
 }
 
 /* =========================================
