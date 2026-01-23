@@ -7,7 +7,7 @@ title: "Home"
    <!-- Header Section: Photo Left, Name Right -->
    <div class="landing-header">
       <div class="landing-photo">
-         <img class="img-pp" src="assets/img/pp3.webp" alt="Göktuğ Öcal">
+         <img class="img-pp" src="assets/img/ppp.webp" alt="Göktuğ Öcal">
       </div>
       <div class="landing-name">
          <h1 class="name-title">Göktuğ Öcal</h1>
@@ -34,9 +34,12 @@ title: "Home"
       <p class="about-text">
          I hold an M.S. in Computer Engineering from <strong>Bogazici University</strong> and a B.S. in Control & Automation Engineering from <strong>Istanbul Technical University</strong>. I'm passionate about data science, F1, cinema, video games, and The Office.
       </p>
+      <p class="about-text">
+         I transform Formula 1 data into visuals that tell a story and reveal what’s happening beyond the stopwatch. Follow my work at <a href="https://x.com/f1bydata"><strong>F1byData</strong></a>.
+      </p>
       <div class="landing-buttons">
          <a class="btn btn-outline" href="mailto:goktugocal41@gmail.com" role="button">Mail me</a>
-         <a class="btn btn-outline" href="/assets/cv/Goktug_Ocal_CV.pdf" role="button" download="GoktugOcal_CV.pdf">Download my CV</a>
+         <!-- <a class="btn btn-outline" href="/assets/cv/Goktug_Ocal_CV.pdf" role="button" download="GoktugOcal_CV.pdf">Download my CV</a> -->
       </div>
    </div>
 
@@ -66,7 +69,7 @@ title: "Home"
    <div class="landing-about" style="margin-top: 40px;">
       <h3 class="name-title" style="font-size: 1.1rem; margin-bottom: 20px;">Recent Projects</h3>
       <ul style="list-style-type: none; padding: 0; margin: 0;">
-         {% for project in site.projects limit:3 %}
+         {% for project in site.projects reversed limit:3 %}
             {% assign link_url = project.url %}
             {% assign is_external = false %}
             

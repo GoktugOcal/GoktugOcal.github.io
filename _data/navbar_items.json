@@ -10,13 +10,13 @@
         "href": "/blog.html"
     },
     {
-        "page_name": "About",
-        "item_name": "About",
-        "href": "/about.html"
-    },
-    {
         "page_name": "Projects",
         "item_name": "Projects",
         "href": "/projects/"
     }
 ]
+// {
+//     "page_name": "About",
+//     "item_name": "About",
+//     "href": "/about.html"
+// },

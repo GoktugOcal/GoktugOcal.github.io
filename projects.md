@@ -10,7 +10,8 @@ permalink: /projects/
          <p class="section-subtitle text" style="margin-bottom: 40px;">A marked list of my projects, experiments and open-source contributions.</p>
     </div>
     <div class="col-12">
-        {% for project in site.projects %}
+        {% assign sorted_projects = site.projects | sort: "path" %}
+        {% for project in sorted_projects %}
             {% assign link_url = project.url %}
             {% assign is_external = false %}
             

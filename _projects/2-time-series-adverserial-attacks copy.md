@@ -6,4 +6,3 @@ image: /assets/img/time-series-adversarial-attacks-header.png
 github_repo: "https://github.com/GoktugOcal/time-series-adversarial-attacks"
 date: 2024-01-01
 ---
-This content won't be shown because of the external link redirection logic in the projects list.
