@@ -70,7 +70,14 @@ img {
    2. TYPOGRAPHY
    ========================================= */
 h1,
-h2,
+h2 {
+    font-family: var(--font-heading);
+    color: var(--text-heading);
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
 h3,
 h4,
 h5,
@@ -78,7 +85,7 @@ h6 {
     font-family: var(--font-heading);
     color: var(--text-heading);
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1;
     margin-bottom: 1rem;
 }
 
@@ -401,12 +408,12 @@ h6 {
 }
 
 .content h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .content p {
     margin-bottom: 1.5rem;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .content ul,
@@ -460,6 +467,67 @@ h6 {
     background: transparent;
     padding: 0;
     color: inherit;
+}
+
+/* Tables */
+.content table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 2.5rem 0;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    border: 1px solid var(--border-color);
+    /* border-radius: 12px; */
+    overflow: hidden;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03); */
+    /* background-color: #fff; */
+}
+
+.content th {
+    /* background-color: #fafbfc; */
+    color: var(--gray-dark);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    /* letter-spacing: 0.1em; */
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.content td {
+    padding: 5px 20px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-main);
+    vertical-align: middle;
+}
+
+.content tr:last-child td {
+    border-bottom: none;
+}
+
+.content tr:nth-child(even) {
+    /* background-color: #fafafa; */
+}
+
+.content tr:hover td {
+    /* background-color: rgba(0, 0, 0, 0.02); */
+    /* transition: background-color 0.2s ease; */
+}
+
+.content table strong {
+    font-weight: 700;
+    color: var(--text-heading);
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    .content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 8px;
+    }
 }
 
 /* =========================================
