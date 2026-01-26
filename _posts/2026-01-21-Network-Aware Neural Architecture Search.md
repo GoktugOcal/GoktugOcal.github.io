@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Introducing Network-Aware Federated Neural Architecture Search
-summary: "Introducing Network-Aware Federated Neural Architecture Search"
-cover: "/assets/img/nas/nas.webp"
-img: "/assets/img/nas/nas.jpg"
+summary: "Introducing my research paper, and open-source framework, NAFNAS. The research focuses on the Neural Architecture Search in a Federated Learning environment with network constraints. We have optimized the communication delay in FL training rounds and model performance while reducing the model size to fit in edge-devices."
+cover: "/assets/img/nafnas/nafnas-architecture-3d.jpg"
+img: "/assets/img/nafnas/nafnas-architecture-3d.jpg"
 tags: ["paper review",”research”]
 
 published: true
