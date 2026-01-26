@@ -56,6 +56,10 @@ a {
     transition: color 0.2s ease;
 }
 
+.article a:link {
+    color: var(--accent-hover);
+}
+
 a:hover {
     color: var(--accent-color);
 }
@@ -528,6 +532,13 @@ h6 {
         -webkit-overflow-scrolling: touch;
         border-radius: 8px;
     }
+}
+
+figure {
+    margin-bottom: 15px;
+}
+figcaption {
+    font-size: 0.8rem;
 }
 
 /* =========================================
