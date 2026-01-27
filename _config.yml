@@ -22,3 +22,13 @@ plugins:
   - jekyll-target-blank
   - jekyll-seo-tag
   - jekyll-sitemap
+
+values:
+  mathjax: true
+
+# Adding similar functionalities such as _posts
+collections:
+  tools:
+    output: true
+  projects:
+    output: true

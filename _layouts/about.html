@@ -1,33 +1,23 @@
 ---
 layout: default
 ---
-<div class="row col-12 justify-content-center" style="margin:0px;">
-    <div class="col-md-6 col-12 justify-content-center" style="margin-top: 5vh; text-align:center;">
-        <a style="font-family: Roboto; font-weight:200; font-size:calc(15px + 0.5vw)">Who Am I?</a>
-        <br>
-        <a style="font-family: Roboto; font-weight:900; font-size:calc(25px + 0.5vw)">About Me</a>
-        <br>
-        <img src="assets/img/about_1.jpg" alt="this slowpoke moves" width="100%" style="margin-top: 5vh; margin-bottom: 5vh";/>
-        <div class="content" style="font-family:Poppins; font-weight:200; font-size:calc(15px + 0.4vw); text-align: left;">{{content}}</div>
-        <div class="buttons">
-            <div class="justify-content-center btn-container">
-                <a class="btn btn-about-mail" href="mailto:goktugocal41@gmail.com" role="button">Mail me</a>
-            </div>
-            <div class="justify-content-center btn-container">
-                <a class="btn btn-about-cv" href="/assets/cv/Goktug_Ocal_CV.pdf" role="button" download="GoktugOcal_CV.pdf">Download my CV</a>
-            </div>
+<div class="container text-center" style="margin-top: 3rem;">
+    <div class="section-header">
+        <p class="section-subtitle" style="font-size: 1.2rem;">Who Am I?</p>
+        <h1 class="section-title">About Me</h1>
+    </div>
 
+    <div style="max-width: 700px; margin: 0 auto;">
+        <img src="assets/img/about_1.webp" alt="Profile Logic" width="100%"
+            style="margin-bottom: 2rem; border-radius: 10px;" />
+        <div class="content" style="text-align: left;">
+            {{ content }}
         </div>
 
-        <!-- <h1 id="contact" style="display:flex; font-family:Roboto; font-weight:900; font-size:calc(25px + 0.5vw)">Contact with me</h1>
-
-        <div class="contact">
-            <a class="btn btn-contact" style="background-color: #0077B5;" href="https://www.linkedin.com/in/goktugocal" role="button"><i class="fa fa-envelope"></i> | Mail</a>
-            <a class="btn btn-contact" style="background-color: #0077B5;" href="https://www.linkedin.com/in/goktugocal" role="button"><i class="fa fa-linkedin"></i> | LinkedIn</a>
-            <a class="btn btn-contact" style="background-color: #333;" href="https://github.com/GoktugOcal"><i class="fa fa-github"></i> | GitHub</a>
-            <a class="btn btn-contact" style="background-color: #C13584;" href="https://www.instagram.com/goktug.ocal/"><i class="fa fa-instagram"></i> | Instagram</a>
-            <a class="btn btn-contact" style="background-color: #1db954;" href="https://open.spotify.com/user/mr41showtime?si=aa3902b9a7c74034"><i class="fa fa-spotify"></i> | Spotify</a>
-        </div> -->
-        
+        <div class="d-flex justify-center" style="gap: 15px; margin-top: 2rem; margin-bottom: 3rem; flex-wrap: wrap;">
+            <a class="btn btn-secondary" href="mailto:goktugocal41@gmail.com" role="button">Mail me</a>
+            <a class="btn btn-primary" href="/assets/cv/Goktug_Ocal_CV.pdf" role="button"
+                download="GoktugOcal_CV.pdf">Download my CV</a>
+        </div>
     </div>
 </div>

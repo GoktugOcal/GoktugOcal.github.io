@@ -4,23 +4,33 @@ layout: default
 {% assign read_time = page.content | number_of_words | divided_by: 200 %}
 
 <div>
-    <div class="row justify-content-center" style="margin:0px; margin-top:10px;">
-        <img class="col-xl-4 col-lg-6 col-md-6 col-sm-10 col-12" src="{{ page.cover }}" alt="{{ page.title }}">
-    </div>
-    <div class="row justify-content-center" style="margin:0px;">
-        <section class="article col-xl-4 col-lg-6 col-md-6 col-sm-10 col-12">
-            <div class="article-header">
-                <h1 class="article-title">{{page.title}}</h1>
-                <small class="date">{{page.date | date_to_string}} | {{ read_time }} min read</small>
-                <div class="tags">
-                    {% for tag in page.tags %}
-                        <div class="tag" style="background-color: {{ site.data.tag_colors[0][tag] }} " href="/blog/{{ tag }}">{{ tag }}</div>
-                    {% endfor %}
-                </div>
+    <div class="d-flex justify-center" style="margin:0px;">
+        <section class="article" style="width: 100%; max-width: 800px; margin: 3rem 0;">
+            <div class="article-header text-center" style="margin-bottom: 3rem;">
+                <h1 class="section-title">{{page.title}}</h1>
+                <small class="date">{{page.date | date_to_string}}</small>
             </div>
             <div class="content">{{content}}</div>
-            </section>
+
+            <!-- Project Specific Footer Links -->
+            {% if page.github_repo or page.external_url %}
+            <div class="d-flex justify-center"
+                style="gap: 20px; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee;">
+                {% if page.github_repo %}
+                <a href="{{ page.github_repo }}" target="_blank" class="icon-link"
+                    style="display: flex; align-items: center; gap: 5px;">
+                    <i class="fa fa-github"></i> View on GitHub
+                </a>
+                {% endif %}
+                {% if page.external_url %}
+                <a href="{{ page.external_url }}" target="_blank" class="icon-link"
+                    style="display: flex; align-items: center; gap: 5px;">
+                    <i class="fa fa-external-link"></i> Visit Website
+                </a>
+                {% endif %}
+            </div>
+            {% endif %}
+
+        </section>
     </div>
-
 </div>
-
