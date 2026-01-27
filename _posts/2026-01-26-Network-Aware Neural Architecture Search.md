@@ -4,7 +4,7 @@ title: Introducing Network-Aware Federated Neural Architecture Search
 summary: "Introducing my research paper, and open-source framework, NAFNAS. The research focuses on the Neural Architecture Search in a Federated Learning environment with network constraints. We have optimized the communication delay in FL training rounds and model performance while reducing the model size to fit in edge-devices."
 cover: "/assets/img/nafnas/nafnas-architecture-3d.jpg"
 img: "/assets/img/nafnas/nafnas-architecture-3d.jpg"
-tags: ["paper review",”research”]
+tags: ["paper review","research"]
 
 published: true
 ---
@@ -48,8 +48,8 @@ To solve this, researchers combine two powerful technologies. In our paper, we l
 
 Proposed by Google in [2016](https://arxiv.org/abs/1610.05492), Federated Learning allows devices to train a shared global model collaboratively without ever sharing their raw data.
 
-<figure align="center">
-  <img src="/assets/img/nafnas/fed-basic.jpg" alt="Basic steps in FL">
+<figure align="center" style="width: 70%; margin-left: auto; margin-right: auto;">
+  <img src="/assets/img/nafnas/federated-learning.svg" alt="Basic steps in FL">
   <figcaption class="figcaption">Steps in Federated Learning</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ In a theoretical lab setting, we might assume all devices have fast, stable inte
 - **Biased Training:** If a client has a bad connection, they might drop out or fail to send updates in time. This means the model never learns from that user's data, leading to a biased model that only works well for users with good internet.
 
 <figure align="center">
-  <img src="/assets/img/nafnas/network-bottleneck.png" alt="Network Bottleneck">
+  <img src="/assets/img/nafnas/federated-learning-network-bottleneck.svg" alt="Network Bottleneck">
   <figcaption class="figcaption">Network Bottleneck in Federated Learning</figcaption>
 </figure>
 

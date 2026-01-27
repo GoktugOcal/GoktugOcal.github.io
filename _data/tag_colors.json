@@ -1,8 +1,11 @@
-[{
-    "paper review" : "SteelBlue",
-    "deep learning" : "Tomato",
-    "news" : "YellowGreen",
-    "data science" : "Tomato",
-    "python" : "DarkSlateGrey",
-    "movie review" : "Peru"
-}]
+[
+    {
+        "paper review": "SteelBlue",
+        "deep learning": "Tomato",
+        "news": "YellowGreen",
+        "data science": "Tomato",
+        "python": "DarkSlateGrey",
+        "movie review": "Peru",
+        "research": "SteelBlue"
+    }
+]
