@@ -39,7 +39,7 @@ title: "Personal Blog"
                             </span>
                             <span style="color: #444;">•</span>
                             <span class="tags" style="font-family: 'Oswald', sans-serif; font-size: 0.8rem; color: #666; margin-bottom: 0;">
-                                {% for tag in post.tags %}
+                                {% for tag in post.categories %}
                                     {{ tag }}{% unless forloop.last %}, {% endunless %}
                                 {% endfor %}
                             </span>

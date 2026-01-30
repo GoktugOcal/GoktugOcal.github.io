@@ -5,6 +5,8 @@ summary: "Technical Debt stands for the extra cost that arises in the long term 
 cover: "/assets/img/hidden_technical_debt_of_machine_learning_systems/iceberg.webp"
 img: "/assets/img/hidden_technical_debt_of_machine_learning_systems/png/iceberg.jpg"
 tags: ["paper review"]
+categories:
+  - paper review
 
 published: true
 ---
