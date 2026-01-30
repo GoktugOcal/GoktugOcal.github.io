@@ -5,8 +5,6 @@ summary: "Melanie Mitchell published the paper 'Why AI is Harder Than We Think?'
 cover: "/assets/img/why_ai_is_harder_than_we_think/ai.webp"
 img: "/assets/img/why_ai_is_harder_than_we_think/png/ai.png"
 tags: ["paper review"]
-categories:
-  - paper review
 
 published: true
 ---

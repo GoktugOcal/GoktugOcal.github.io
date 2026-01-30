@@ -5,9 +5,6 @@ summary: "Neural Architecture Search is a field where the goal is finding best p
 cover: "/assets/img/nas/nas.webp"
 img: "/assets/img/nas/nas.jpg"
 tags: ["deep learning","paper review"]
-categories:
-  - deep learning
-  - paper review
 
 published: true
 ---

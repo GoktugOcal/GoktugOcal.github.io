@@ -5,9 +5,6 @@ summary: "Introducing my research paper, and open-source framework, NAFNAS. The 
 cover: "/assets/img/nafnas/nafnas-architecture-3d.jpg"
 img: "/assets/img/nafnas/nafnas-architecture-3d.jpg"
 tags: ["paper review","research"]
-categories:
-  - paper review
-  - research
 
 published: true
 ---
