@@ -2,8 +2,8 @@
 layout: post
 title: Lights Down, Movie On - Bringing the Cinema Experience to My Living Room
 summary: "Bringing movie theater into living room via an automation with Plex, Home Assistant, Tailscale and WiFi Bulbs."
-cover: "/assets/img/smart_cinema_ha/home_cinema_small.png"
-img: "/assets/img/smart_cinema_ha/home_cinema_small.png"
+cover: "/assets/img/smart_cinema_ha/home_cinema_small.webp"
+img: "/assets/img/smart_cinema_ha/home_cinema_small.webp"
 # tags: ["paper review","research"]
 
 published: true
